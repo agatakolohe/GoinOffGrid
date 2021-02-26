@@ -26,3 +26,11 @@
 11:30am - Finish Proposal
 
 - Design user form
+
+12:30pm - Plan and design components
+
+- Component diagram
+
+1:30pm - Research email scheduler, complete component diagram, add to readme
+
+- node-cron
