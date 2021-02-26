@@ -8,7 +8,7 @@
   - "Such a good idea! I always text my mom but sometimes I feel like I'm worrying her for no need."
   - "I have totally thought about pitching this and I wish I could but I have no idea where to go with this. I am not a tech kind of gal. Wish I was. Wish I could develop this app myself"
 
-10:30am - Research sending Emails with Firebase with Nodemailer and test with Mailtrap. Research countdown timer template. (Do later not necessary atm, turning into a stretch goal)
+10:30-11:30am - Research sending Emails with Firebase with Nodemailer and test with Mailtrap. Research countdown timer template. (Do later not necessary atm, turning into a stretch goal)
 
 - Nodemailer could be used to send and schedule emails
 - Ten essential items for hiking:
@@ -23,14 +23,18 @@
   - Extra water: Beyond the minimum expectation
   - Extra clothes: Beyond the minimum expectation
 
-11:30am - Finish Proposal
+12:30pm - Finish Proposal
 
-- Design user form
+- Plan hiker form
 
-12:30pm - Plan and design components
+1:30pm - Plan and design components
 
 - Component diagram
 
-1:30pm - Research email scheduler, complete component diagram, add to readme
+2:30pm - Research email scheduler, complete component diagram, add to readme
 
 - node-cron
+
+3:30pm - Research firebase with nodemailer
+
+4:30pm - Begin to build static site with React
