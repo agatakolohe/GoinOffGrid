@@ -4,7 +4,7 @@
 
 #### Description
 
-GoinOffGrid is an 'accountabilibuddy'/accountability app for hikers to share their location, supplies and duration of hike with an emergency contact (accountabilibuddy). The goal is to have a chosen contact be aware and accountable of the hiker's adventure and safe return.
+GoinOffGrid is an accountability app for hikers to streamline their hike information with an emergency contact. The goal is to have a chosen contact be aware and accountable of the hiker's adventure and safe return.
 
 #### Use Case
 
@@ -29,7 +29,7 @@ GoinOffGrid is an 'accountabilibuddy'/accountability app for hikers to share the
 - User registration (database storage)
 - User login/sign-out (database authentication)
 - Form for user to add hike/hiker information and emergency contact information
-- Hike information:
+- Hike Information:
   1. Location
   2. Duration
   3. Weather Conditions
@@ -37,7 +37,7 @@ GoinOffGrid is an 'accountabilibuddy'/accountability app for hikers to share the
   5. Advisories: Wildlife, Flash flood, Avalanche
   6. Trail maintenance, foot traffic, markings
   7. Trail Difficulty
-- Hiker information:
+- Hiker Information:
   1. Clothing worn, cell phone battery life percentage, cell phone signal, mood, health condition
   2. Itinerary: plan to stay on trail or go off grid, climb, swim
   3. Transportation: type, vehicle description, gas, parking location
