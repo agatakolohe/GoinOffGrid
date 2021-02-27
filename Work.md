@@ -38,3 +38,5 @@
 3:30pm - Research firebase with nodemailer
 
 4:30pm - Begin to build static site with React
+
+- Debug, installed bootstrap in wrong dir, comment out control to run npm

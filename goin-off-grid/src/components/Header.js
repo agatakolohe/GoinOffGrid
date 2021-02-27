@@ -6,8 +6,8 @@ function Header() {
       <nav className="navbar navbar-light bg-light">
         <a className="navbar-brand" href="/">
           <img
-            src="https://toppng.com/uploads/preview/mountain-comments-mountain-svg-free-11562934615d2d1zqluo0.png"
-            width="30"
+            src="https://img.freepik.com/free-vector/wallpaper-of-mountain-ink_23-2147496496.jpg"
+            width="10%"
             className="d-inline-block align-top"
             alt="Mountain SVG"
             loading="lazy"
