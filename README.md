@@ -79,6 +79,15 @@ If any errors or bugs occur please email me, <agatakolohe@gmail.com>.
 
 ## Technologies Used
 
+- Bootstrap
+- CSS
+- HTML
+- Git
+- JavaScript ES6
+- JSX
+- Node
+- npm
+- React
 - VS Code
 
 ### License
