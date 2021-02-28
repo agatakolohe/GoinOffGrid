@@ -50,3 +50,9 @@ Notes:
 
 10:00am-12pm - Build Hike Components. Add Hike Detail, Hike List Components. Add functionality for user to click on hike to see full details. Update Component Diagram.
 Notes: Figure out button for hike completion
+
+12-1pm - Debug, full CRUD functionality with static site.
+Notes:
+
+- Need to format date to not be yyyy,mm,dd >> moment.js probably the best option
+- Hike completed function not working >> debugged, is working 1:05pm

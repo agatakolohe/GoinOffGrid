@@ -7,7 +7,7 @@ function Hike(props) {
       <div onClick={() => props.whenHikeClicked(props.id)}>
         <p>Trail Name: {props.trailName}</p>
         <p>Trail Date: {props.hikeDate}</p>
-        <p>Hike Completed: {props.hikeCompleted}</p>
+        <p>Hike Completed: {props.hikeCompleted === true ? "yes" : "no"}</p>
       </div>
       <button
         className="btn btn-success"
@@ -22,6 +22,7 @@ function Hike(props) {
 Hike.propTypes = {
   trailName: PropTypes.string,
   hikeDate: PropTypes.string,
+  hikeCompleted: PropTypes.bool,
   id: PropTypes.string,
   whenHikeClicked: PropTypes.func,
   completeHikeButton: PropTypes.func,

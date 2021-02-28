@@ -3,11 +3,13 @@ import PropTypes from "prop-types";
 
 function HikeDetail(props) {
   const { hike } = props;
+  console.log(hike.hikeCompleted);
   return (
     <React.Fragment>
       <h1>Hiker Information</h1>
       <p>Hiker Name: {hike.hikerName}</p>
       <p>Hike Date: {hike.hikeDate}</p>
+      <p>Hike Completed: {hike.hikeCompleted === true ? "yes" : "no"}</p>
       <p>Clothing Worn: {hike.clothingWorn}</p>
       <p>Bringing Cell Phone: {hike.cellPhone}</p>
       <p>Battery Life: {hike.batteryLife}</p>
@@ -19,7 +21,6 @@ function HikeDetail(props) {
       <p>Vehicle Information: {hike.vehicle}</p>
       <p>Gas Tank: {hike.gas}</p>
       <p>Parking Information: {hike.parking}</p>
-
       <h4>Supplies: </h4>
       <p>Water: {hike.water}</p>
       <p>Food: {hike.food}</p>
@@ -29,7 +30,6 @@ function HikeDetail(props) {
       <p>Avalanche Kit: {hike.avalancheKit}</p>
       <p>Emergency Supplies: {hike.emergencySupplies}</p>
       <p>Extra Equipment: {hike.extraEquip}</p>
-
       <h3>Hike Information:</h3>
       <p>Trail Name: {hike.trailName}</p>
       <p>Estimated Duration: {hike.duration}</p>
@@ -44,13 +44,11 @@ function HikeDetail(props) {
       <p>Advisories: {hike.trailAdvisories}</p>
       <p>Trail Maintenance: {hike.trailMaintenance}</p>
       <p>Foot Traffic: {hike.footTraffic}</p>
-
       <h3>Emergency Contact Information</h3>
       <p>Contact Name: {hike.contactName}</p>
       <p>Relationship: {hike.contactRelationship}</p>
       <p>Email: {hike.contactEmail}</p>
       <p>Phone Number: {hike.contactTel}</p>
-
       <button className="btn btn-success" onClick={props.onClickingEdit}>
         Edit
       </button>

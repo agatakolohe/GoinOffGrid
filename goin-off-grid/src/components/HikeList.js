@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 
 function HikeList(props) {
   const { hikeList, onClickingCompleteHike } = props;
+
   return (
     <React.Fragment>
       {hikeList.map((hike) => (
