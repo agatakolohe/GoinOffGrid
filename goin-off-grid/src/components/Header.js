@@ -12,6 +12,7 @@ function Header() {
             alt="Mountain SVG"
             loading="lazy"
           ></img>
+          Goin Off Grid
         </a>
       </nav>
     </React.Fragment>

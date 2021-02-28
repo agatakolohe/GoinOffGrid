@@ -40,3 +40,10 @@
 4:30pm - Begin to build static site with React
 
 - Debug, installed bootstrap in wrong dir, comment out control to run npm
+
+02-28-2021
+
+8:00am - Building out form.
+Notes:
+
+- Should there be seperate forms for hiker info, hike info, emergency contact info? Keep it one for now and see how it looks and functions.
