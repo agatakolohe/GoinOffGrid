@@ -37,6 +37,7 @@ function NewHikeForm(props) {
       trailPass: event.target.trailPass.value,
       duration: event.target.duration.value,
       trailConditions: event.target.trailConditions.value,
+      weatherConditions: event.target.weatherConditions.value,
       trailAdvisories: event.target.trailAdvisories.value,
       trailMaintenance: event.target.trailMaintenance.value,
       footTraffic: event.target.footTraffic.value,

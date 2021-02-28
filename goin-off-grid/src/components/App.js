@@ -1,12 +1,14 @@
 import React from "react";
 import Header from "./Header";
-import HikerControl from "./HikerControl";
+import HikeControl from "./HikeControl";
 
 function App() {
   return (
     <React.Fragment>
       <Header />
-      <HikerControl />
+      <div className="container">
+        <HikeControl />
+      </div>
     </React.Fragment>
   );
 }

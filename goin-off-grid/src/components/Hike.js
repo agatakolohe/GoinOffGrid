@@ -6,7 +6,7 @@ function Hike(props) {
     <React.Fragment>
       <div onClick={() => props.whenHikeClicked(props.id)}>
         <p>Trail Name: {props.trailName}</p>
-        <p>Trail Date: {props.trailDate}</p>
+        <p>Trail Date: {props.hikeDate}</p>
         <p>Hike Completed: {props.hikeCompleted}</p>
       </div>
       <button
@@ -21,7 +21,7 @@ function Hike(props) {
 
 Hike.propTypes = {
   trailName: PropTypes.string,
-  trailDate: PropTypes.instanceOf(Date),
+  hikeDate: PropTypes.string,
   id: PropTypes.string,
   whenHikeClicked: PropTypes.func,
   completeHikeButton: PropTypes.func,

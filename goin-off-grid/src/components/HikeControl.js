@@ -44,7 +44,7 @@ class HikeControl extends React.Component {
   handleEditingHikeInList = (hikeToEdit) => {
     const editedMasterHikeList = this.state.masterHikeList
       .filter((hike) => hike.id !== this.state.selectedHike.id)
-      .concact(hikeToEdit);
+      .concat(hikeToEdit);
     this.setState({
       masterHikeList: editedMasterHikeList,
       editing: false,

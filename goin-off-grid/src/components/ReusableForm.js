@@ -1,5 +1,5 @@
 import React from "react";
-import Proptypes from "prop-types";
+import PropTypes from "prop-types";
 
 function ReusableForm(props) {
   return (
@@ -44,7 +44,7 @@ function ReusableForm(props) {
             value="yes"
             className="form-check-input"
           />
-          <label className="form-check-label" for="cellPhoneYes">
+          <label className="form-check-label" htmlFor="cellPhoneYes">
             Yes
           </label>
         </div>
@@ -55,7 +55,7 @@ function ReusableForm(props) {
             value="no"
             className="form-check-input"
           />
-          <label className="form-check-label" for="cellPhoneNo">
+          <label className="form-check-label" htmlFor="cellPhoneNo">
             No
           </label>
         </div>
@@ -112,7 +112,7 @@ function ReusableForm(props) {
             <p>Mode of Transportation</p>
             <input
               type="text"
-              name="transporationMode"
+              name="transportationMode"
               placeholder="Car, Uber, Bus, Walk"
               className="form-control"
             />
@@ -192,7 +192,7 @@ function ReusableForm(props) {
             value="yes"
             className="form-check-input"
           />
-          <label className="form-check-label" for="avalancheYes">
+          <label className="form-check-label" htmlFor="avalancheYes">
             Yes
           </label>
         </div>
@@ -203,7 +203,7 @@ function ReusableForm(props) {
             value="no"
             className="form-check-input"
           />
-          <label className="form-check-label" for="avalancheNo">
+          <label className="form-check-label" htmlFor="avalancheNo">
             No
           </label>
         </div>
@@ -241,7 +241,7 @@ function ReusableForm(props) {
             value="yes"
             className="form-check-input"
           />
-          <label className="form-check-label" for="hikedBeforeYes">
+          <label className="form-check-label" htmlFor="hikedBeforeYes">
             Yes
           </label>
         </div>
@@ -252,7 +252,7 @@ function ReusableForm(props) {
             value="no"
             className="form-check-input"
           />
-          <label className="form-check-label" for="hikedBeforeNo">
+          <label className="form-check-label" htmlFor="hikedBeforeNo">
             No
           </label>
         </div>

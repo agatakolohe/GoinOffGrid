@@ -7,7 +7,7 @@ function HikeDetail(props) {
     <React.Fragment>
       <h1>Hiker Information</h1>
       <p>Hiker Name: {hike.hikerName}</p>
-      <p>Hike Date: {hike.trailDate}</p>
+      <p>Hike Date: {hike.hikeDate}</p>
       <p>Clothing Worn: {hike.clothingWorn}</p>
       <p>Bringing Cell Phone: {hike.cellPhone}</p>
       <p>Battery Life: {hike.batteryLife}</p>
@@ -40,6 +40,7 @@ function HikeDetail(props) {
       <p>Difficulty: {hike.trailDifficulty}</p>
       <p>Permit/Pass Required: {hike.trailPass}</p>
       <p>Trail Conditions: {hike.trailConditions}</p>
+      <p>Weather Conditions: {hike.weatherConditions}</p>
       <p>Advisories: {hike.trailAdvisories}</p>
       <p>Trail Maintenance: {hike.trailMaintenance}</p>
       <p>Foot Traffic: {hike.footTraffic}</p>
