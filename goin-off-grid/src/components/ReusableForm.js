@@ -10,7 +10,7 @@ function ReusableForm(props) {
           <p>Name:</p>
           <input
             type="text"
-            name="name"
+            name="hikerName"
             placeholder="Hiker Name"
             className="form-control"
           />
@@ -23,7 +23,7 @@ function ReusableForm(props) {
           <p>Will you have any form of identification on you?</p>
           <input
             type="text"
-            name="identification"
+            name="hikerId"
             placeholder="Yes, I will have my state ID in my backpack."
             className="form-control"
           />
@@ -163,7 +163,7 @@ function ReusableForm(props) {
         <div className="form-group">
           <p>Navigation:</p>
           <textarea
-            name="name"
+            name="navigation"
             placeholder="List any navigation tools you are bringing. Example: compass, map, GPS"
             className="form-control"
           />
@@ -218,7 +218,7 @@ function ReusableForm(props) {
         <div className="form-group">
           <p>List any extra equipment you will be bringing.</p>
           <textarea
-            name="extraEqupment"
+            name="extraEquip"
             placeholder="Rope, tent, climbing gear, microspikes, snowshoes, trekking poles."
             className="form-control"
           />

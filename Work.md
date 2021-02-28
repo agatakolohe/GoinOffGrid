@@ -43,7 +43,9 @@
 
 02-28-2021
 
-8:00am - Building out form.
+8:00am-930am - Building out form.
 Notes:
 
-- Should there be seperate forms for hiker info, hike info, emergency contact info? Keep it one for now and see how it looks and functions.
+- Should there be seperate forms for hiker info, hike info, emergency contact info? Keep it one for now and see how it looks and functions. UX note: maintaining the goal to have it be "streamlined" having everything all on one form could be more convenient for user.
+
+10:00am - Build Hike Components. Add Hike Detail, Hike List Components. Add functionality for user to click on hike to see full details. Update Component Diagram.
