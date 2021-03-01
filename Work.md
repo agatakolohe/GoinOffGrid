@@ -68,5 +68,5 @@ Notes:
 9pm - Multi-step form working. But is not adding to list. Debug form submission
 Notes:
 
-- Error: Form submission canceled because the form is not connected
+- Error: Form submission canceled because the form is not connected. Google says to change all button types to be button
 - Error: Warning: Each child in a list should have a unique "key" prop.
