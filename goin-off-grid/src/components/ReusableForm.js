@@ -376,7 +376,7 @@ function ReusableForm(props) {
           <p>Contact Phone Number:</p>
           <input type="tel" name="contactTel" className="form-control" />
         </div>
-        <button className="btn btn-success" type="submit">
+        <button className="btn btn-success" type="button">
           {props.buttonText}
         </button>
       </form>

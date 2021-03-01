@@ -55,4 +55,18 @@ Notes: Figure out button for hike completion
 Notes:
 
 - Need to format date to not be yyyy,mm,dd >> moment.js probably the best option
-- Hike completed function not working >> debugged, is working 1:05pm
+- Hike completed button function not working >> debugged, is working 1:05pm
+  https://css-tricks.com/the-magic-of-react-based-multi-step-forms/
+- Idea: because form is so long, make seperate components for each form section?
+
+1pm - Research multi-step form
+
+--Naps--
+
+6pm - Build multi-step form
+
+9pm - Multi-step form working. But is not adding to list. Debug form submission
+Notes:
+
+- Error: Form submission canceled because the form is not connected
+- Error: Warning: Each child in a list should have a unique "key" prop.

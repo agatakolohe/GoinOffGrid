@@ -12,6 +12,7 @@ function Hike(props) {
       <button
         className="btn btn-success"
         onClick={() => props.completeHikeButton(props.id)}
+        type="button"
       >
         Hike Completed
       </button>

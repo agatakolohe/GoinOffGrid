@@ -1,5 +1,6 @@
 import React from "react";
-import NewHikeForm from "./NewHikeForm";
+// import NewHikeForm from "./NewHikeForm";
+import MasterForm from "./MasterForm";
 import HikeList from "./HikeList";
 import HikeDetail from "./HikeDetail";
 import EditHikeForm from "./EditHikeForm";
@@ -97,7 +98,7 @@ class HikeControl extends React.Component {
       buttonText = "Return to Main Page";
     } else if (this.state.hikeFormVisibleOnPage) {
       currentVisibleState = (
-        <NewHikeForm onNewHikeCreation={this.handleAddingNewHikeToList} />
+        <MasterForm onNewHikeCreation={this.handleAddingNewHikeToList} />
       );
       buttonText = "Return to Main Page";
     } else {
@@ -113,7 +114,11 @@ class HikeControl extends React.Component {
     return (
       <React.Fragment>
         {currentVisibleState}
-        <button className="btn btn-primary" onClick={this.handleClick}>
+        <button
+          className="btn btn-primary"
+          onClick={this.handleClick}
+          type="button"
+        >
           {buttonText}
         </button>
       </React.Fragment>

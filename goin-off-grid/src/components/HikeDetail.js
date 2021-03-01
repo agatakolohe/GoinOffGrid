@@ -3,7 +3,6 @@ import PropTypes from "prop-types";
 
 function HikeDetail(props) {
   const { hike } = props;
-  console.log(hike.hikeCompleted);
   return (
     <React.Fragment>
       <h1>Hiker Information</h1>
@@ -49,13 +48,18 @@ function HikeDetail(props) {
       <p>Relationship: {hike.contactRelationship}</p>
       <p>Email: {hike.contactEmail}</p>
       <p>Phone Number: {hike.contactTel}</p>
-      <button className="btn btn-success" onClick={props.onClickingEdit}>
+      <button
+        className="btn btn-success"
+        onClick={props.onClickingEdit}
+        type="button"
+      >
         Edit
       </button>
       <hr />
       <button
         className="btn btn-danger"
         onClick={() => props.onClickingDelete(hike.id)}
+        type="button"
       >
         Delete
       </button>
