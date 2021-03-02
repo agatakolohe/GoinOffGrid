@@ -60,6 +60,10 @@ Notes:
 - Idea: because form is so long, make seperate components for each form section?
 
 1pm - Research multi-step form
+Notes:
+https://dev.to/sametweb/how-to-create-multi-step-forms-in-react-3km4
+
+https://codepen.io/nathansebhastian/pen/RvrOYq
 
 --Naps--
 
@@ -70,3 +74,11 @@ Notes:
 
 - Error: Form submission canceled because the form is not connected. Google says to change all button types to be button
 - Error: Warning: Each child in a list should have a unique "key" prop.
+
+03-01
+
+6pm-9pm Debug add newHike from MasterForm to Control Hike list
+
+03-02
+
+6am-10am Debugged!!! All works!!! Thank you Brooke and Randel
