@@ -18,7 +18,6 @@ class HikeControl extends React.Component {
   }
 
   handleAddingNewHikeToList = (newHike) => {
-    console.log("handleAddingNewHikeToList Reached");
     const newMasterHikeList = this.state.masterHikeList.concat(newHike);
     this.setState({
       masterHikeList: newMasterHikeList,

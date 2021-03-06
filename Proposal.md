@@ -24,11 +24,28 @@ GoinOffGrid is an accountability app for hikers to streamline their hike informa
 
 - The product will allow users/contacts to alleviate the stress of solo hiking.
 
+#### User Stories
+
+Hiker
+
+- I want to be able to fill out a form with information about myself, my hike, supplies, and emergency contact information
+- I want to be able to have an account to log in and log out
+- I want to have a secure account to keep my information private
+- I want to be able to have my inputted information accessible to my emergency contact
+- I want to be able to log my return from the hike
+- I want to have my contact notified if I have not logged my completion of the hike
+
+Contact
+
+- I want to be able to view my hikers inputted information
+- I want to be notified about the start and estimated return time of my hiker's hike
+- I want to be notified about my hikers return from hike
+
 #### Minimum Viable Product
 
 - User registration (database storage)
 - User login/sign-out (database authentication)
-- Form for user to add hike/hiker information and emergency contact information
+- Form for user to add hike/hiker information and emergency contact information (Done)
 - Hike Information:
   1. Location
   2. Duration
@@ -48,7 +65,7 @@ GoinOffGrid is an accountability app for hikers to streamline their hike informa
   3. Email
   4. Phone Number
 - Capability to send email to emergency contact with form information provided by hiker
-- Capability for user to add they have completed their hike and safely returned.
+- Capability for user to add they have completed their hike and safely returned. (Done with button//does work still?)
 - Capability to send email to emergency contact when the hiker has added their safe return
 - Capability to schedule an email to send to the emergency contact if hiker has not logged their hike completion and the hike has exceeded specified duration and provide next step instructions.
 
@@ -68,11 +85,14 @@ GoinOffGrid is an accountability app for hikers to streamline their hike informa
 
 #### Additional Features
 
-- Capability to make API requests to get valid trail information.
+- Sunrise and sunset times available for hiker
+- Capability to make API requests to get valid trail information. (map view, hike details)
+- Capability to make API requests to get information of emergencies services available to contact for lost hiker (rangers in area phone numbers)
+- Capability to see last "pinged" location of user
 - Capability for user to be able to post on their Facebook the hiking information.
 - Capability to schedule a post on user's Facebook if user has not logged hike completion.
 - Countdown timer to display(on user page? who has access to view? in emergency contact email? is that possible?) the duration of the hike
-- Make it a mobile app
+- Make it a mobile app (mobile alerts)
 - Capability to have the option to send automated texts
 
 #### Tools for Additional Features

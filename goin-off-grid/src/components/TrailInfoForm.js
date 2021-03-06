@@ -25,7 +25,8 @@ function TrailInfoForm(props) {
           type="radio"
           name="newTrail"
           className="form-check-input"
-          value={props.yes}
+          value="yes"
+          selectedvalue={props.newTrail}
           onChange={props.handleChange}
         />
         <label className="form-check-label" htmlFor="hikedBeforeYes">
@@ -36,7 +37,8 @@ function TrailInfoForm(props) {
         <input
           type="radio"
           name="newTrail"
-          value={props.no}
+          value="no"
+          selectedvalue={props.newTrail}
           onChange={props.handleChange}
           className="form-check-input"
         />
@@ -166,8 +168,7 @@ function TrailInfoForm(props) {
 }
 TrailInfoForm.propTypes = {
   trailName: PropTypes.string,
-  yes: PropTypes.string,
-  no: PropTypes.string,
+  newTrail: PropTypes.string,
   trailLocation: PropTypes.string,
   trailLength: PropTypes.string,
   trailElevation: PropTypes.string,

@@ -55,7 +55,8 @@ function HikerInfoForm(props) {
         <input
           type="radio"
           name="cellPhone"
-          value={props.yes}
+          value="yes"
+          selectedvalue={props.cellPhone}
           className="form-check-input"
           onChange={props.handleChange}
         />
@@ -67,7 +68,8 @@ function HikerInfoForm(props) {
         <input
           type="radio"
           name="cellPhone"
-          value={props.no}
+          value="no"
+          selectedvalue={props.cellPhone}
           onChange={props.handleChange}
           className="form-check-input"
         />
@@ -234,7 +236,8 @@ function HikerInfoForm(props) {
           type="radio"
           name="avalancheKit"
           className="form-check-input"
-          value={props.yes}
+          value="yes"
+          selectedvalue={props.avalancheKit}
           onChange={props.handleChange}
         />
         <label className="form-check-label" htmlFor="avalancheYes">
@@ -246,7 +249,8 @@ function HikerInfoForm(props) {
           type="radio"
           name="avalancheKit"
           className="form-check-input"
-          value={props.no}
+          value="no"
+          selectedvalue={props.avalancheKit}
           onChange={props.handleChange}
         />
         <label className="form-check-label" htmlFor="avalancheNo">
@@ -281,8 +285,8 @@ HikerInfoForm.propTypes = {
   hikeDate: PropTypes.string,
   hikerId: PropTypes.string,
   clothingWorn: PropTypes.string,
-  yes: PropTypes.string,
-  no: PropTypes.string,
+  avalancheKit: PropTypes.string,
+  cellPhone: PropTypes.string,
   batteryLife: PropTypes.string,
   cellSignal: PropTypes.string,
   mood: PropTypes.string,

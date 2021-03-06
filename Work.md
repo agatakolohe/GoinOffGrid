@@ -5,8 +5,21 @@
 9:30am - Hiker outreach to collect insight, needs, use cases & feedback.
 
 - Feedback:
-  - "Such a good idea! I always text my mom but sometimes I feel like I'm worrying her for no need."
-  - "I have totally thought about pitching this and I wish I could but I have no idea where to go with this. I am not a tech kind of gal. Wish I was. Wish I could develop this app myself"
+  Privacy: Protecting personal information from ill-intention users
+
+  Information logging: car details, location, leave time, estimated return time
+
+  Rescue: Specific agencies in the area, ie sheriff, rangers, SAR. Automatic call 2 hours after expected return.
+
+  GPS tracking
+
+  Simple: entries for location, leave time, estimated return time, and a time to call authorities if not returned by \_\_.
+
+  Advanced: automatic fill in of numbers for specific agencies in the area who need to be informed if not returned by time (local sheriff and ranger station numbers) so the person doesn’t have to research; gps tracking.
+
+  2 hours after that time has expired a call is placed out from authorities to that person to verify if they are back or not. If they are not they send out search teams.
+
+  Accessibility: all smartphones and desktops
 
 10:30-11:30am - Research sending Emails with Firebase with Nodemailer and test with Mailtrap. Research countdown timer template. (Do later not necessary atm, turning into a stretch goal)
 
@@ -82,3 +95,14 @@ Notes:
 03-02
 
 6am-10am Debugged!!! All works!!! Thank you Brooke and Randel for your brains and debugging skillz <3
+
+03-03
+
+7am Add user stories, add all props to handleHikeFormSubmission
+
+Bug:radio buttons not working, does not show value on form submission
+https://www.pluralsight.com/guides/how-to-use-radio-buttons-in-reactjs
+
+03-06
+
+830am - fix radio button bug for newTrail, avalancheKit and cellPhone value

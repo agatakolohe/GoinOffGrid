@@ -44,7 +44,22 @@ GoinOffGrid is an accountability app for hikers to streamline their hike informa
 </details>
 
 <details>
-  <summary>Expand</summary>
+  <summary>User Stories</summary>
+
+**Hiker**
+
+- I want to be able to fill out a form with information about myself, my hike, supplies, and emergency contact information
+- I want to be able to have an account to log in and log out
+- I want to have a secure account to keep my information private
+- I want to be able to have my inputted information accessible to my emergency contact
+- I want to be able to log my return from the hike
+- I want to have my contact notified if I have not logged my completion of the hike
+
+**Contact**
+
+- I want to be able to view my hikers inputted information
+- I want to be notified about the start and estimated return time of my hiker's hike
+- I want to be notified about my hikers return from hike
 
 </details>
 
