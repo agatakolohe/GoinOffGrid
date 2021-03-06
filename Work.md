@@ -103,6 +103,22 @@ Notes:
 Bug:radio buttons not working, does not show value on form submission
 https://www.pluralsight.com/guides/how-to-use-radio-buttons-in-reactjs
 
+03-05
+
+830am - 5pm Research react native, contemplate life and app's future, change app to be mobile only?
+
+New Plan: (maybe)
+
+- Create edit form, reusable form?
+- Redux to handle form state
+- Firebase
+- React Native
+  - handle login, send emails and potentially texts
+    **stretch:** geolocation, trail api
+
 03-06
 
-830am - fix radio button bug for newTrail, avalancheKit and cellPhone value
+830am-930am - Fixed radio button bug for newTrail, avalancheKit and cellPhone values
+930am-12pm - Research editing form, redux for wizard form,
+
+- editing form works!!!!

@@ -4,6 +4,7 @@ import { v4 } from "uuid";
 import HikerInfoForm from "./HikerInfoForm";
 import TrailInfoForm from "./TrailInfoForm";
 import EmergencyContactForm from "./EmergencyContactForm";
+// import EditHikeForm from "./EditHikeForm";
 
 class MasterForm extends Component {
   constructor(props) {
@@ -61,7 +62,6 @@ class MasterForm extends Component {
   };
 
   handleNewHikeFormSubmission = (event) => {
-    console.log(event);
     event.preventDefault();
     this.props.onNewHikeCreation({
       hikerName: this.state.hikerName,
@@ -105,6 +105,50 @@ class MasterForm extends Component {
       id: v4(),
     });
   };
+  // handleEditingHikeInList = (event) => {
+  //   event.preventDefault();
+  //   this.props.onEditHike({
+  //     hikerName: this.state.hikerName,
+  //     hikeDate: this.state.hikeDate,
+  //     clothingWorn: this.state.clothingWorn,
+  //     cellPhone: this.state.cellPhone,
+  //     batteryLife: this.state.batteryLife,
+  //     cellSignal: this.state.cellSignal,
+  //     mood: this.state.mood,
+  //     health: this.state.health,
+  //     itinerary: this.state.itinerary,
+  //     transportationMode: this.state.transportationMode,
+  //     vehicle: this.state.vehicle,
+  //     gas: this.state.gas,
+  //     parking: this.state.parking,
+  //     water: this.state.water,
+  //     food: this.state.food,
+  //     navigation: this.state.navigation,
+  //     buddy: this.state.buddy,
+  //     packedClothing: this.state.packedClothing,
+  //     avalancheKit: this.state.avalancheKit,
+  //     emergencySupplies: this.state.emergencySupplies,
+  //     extraEquip: this.state.extraEquip,
+  //     trailName: this.state.trailName,
+  //     newTrail: this.state.newTrail,
+  //     trailLocation: this.state.trailLocation,
+  //     trailLength: this.state.trailLength,
+  //     trailElevation: this.state.trailElevation,
+  //     trailDifficulty: this.state.trailDifficulty,
+  //     trailPass: this.state.trailPass,
+  //     duration: this.state.duration,
+  //     trailConditions: this.state.trailConditions,
+  //     weatherConditions: this.state.weatherConditions,
+  //     trailAdvisories: this.state.trailAdvisories,
+  //     trailMaintenance: this.state.trailMaintenance,
+  //     footTraffic: this.state.footTraffic,
+  //     contactName: this.state.contactName,
+  //     contactRelationship: this.state.contactRelationship,
+  //     contactEmail: this.state.contactEmail,
+  //     contactTel: this.state.contactTel,
+  //     id: v4(),
+  //   });
+  // };
 
   _next = () => {
     let currentStep = this.state.currentStep;

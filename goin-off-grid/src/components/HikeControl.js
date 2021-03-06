@@ -10,10 +10,9 @@ class HikeControl extends React.Component {
     super(props);
     this.state = {
       hikeFormVisibleOnPage: false,
-      myValues: [],
       masterHikeList: [],
       selectedHike: null,
-      // editing: false,
+      editing: false,
     };
   }
 
@@ -43,16 +42,16 @@ class HikeControl extends React.Component {
     this.setState({ editing: true });
   };
 
-  // handleEditingHikeInList = (hikeToEdit) => {
-  //   const editedMasterHikeList = this.state.masterHikeList
-  //     .filter((hike) => hike.id !== this.state.selectedHike.id)
-  //     .concat(hikeToEdit);
-  //   this.setState({
-  //     masterHikeList: editedMasterHikeList,
-  //     editing: false,
-  //     selectedHike: null,
-  //   });
-  // };
+  handleEditingHikeInList = (hikeToEdit) => {
+    const editedMasterHikeList = this.state.masterHikeList
+      .filter((hike) => hike.id !== this.state.selectedHike.id)
+      .concat(hikeToEdit);
+    this.setState({
+      masterHikeList: editedMasterHikeList,
+      editing: false,
+      selectedHike: null,
+    });
+  };
 
   handleCompletedHike = (id) => {
     const selectedHike = this.state.masterHikeList.filter(
@@ -80,15 +79,15 @@ class HikeControl extends React.Component {
     let currentVisibleState = null;
     let buttonText = null;
 
-    // if (this.state.editing) {
-    //   currentVisibleState = (
-    //     <EditHikeForm
-    //       hike={this.state.selectedHike}
-    //       onEditHike={this.handleEditingHikeInList}
-    //     />
-    //   );
-    //   buttonText = "Return to Main Page";
-    if (this.state.selectedHike != null) {
+    if (this.state.editing) {
+      currentVisibleState = (
+        <MasterForm
+          hike={this.state.selectedHike}
+          onNewHikeCreation={this.handleEditingHikeInList}
+        />
+      );
+      buttonText = "Return to Main Page";
+    } else if (this.state.selectedHike != null) {
       currentVisibleState = (
         <HikeDetail
           hike={this.state.selectedHike}
