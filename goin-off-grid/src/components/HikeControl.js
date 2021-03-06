@@ -1,9 +1,7 @@
 import React from "react";
-// import NewHikeForm from "./NewHikeForm";
 import MasterForm from "./MasterForm";
 import HikeList from "./HikeList";
 import HikeDetail from "./HikeDetail";
-// import EditHikeForm from "./EditHikeForm";
 
 class HikeControl extends React.Component {
   constructor(props) {

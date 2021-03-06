@@ -119,6 +119,6 @@ New Plan: (maybe)
 03-06
 
 830am-930am - Fixed radio button bug for newTrail, avalancheKit and cellPhone values
-930am-12pm - Research editing form, redux for wizard form,
+930am-12pm - Research editing form and redux for wizard form. Have full crud! Delete reusableform, editform, newhikeform. Move on to redux
 
 - editing form works!!!!
