@@ -126,3 +126,5 @@ New Plan: (maybe)
 1230pm-2:40pm - Redux time
 
 - trying to figure out how to test reducers...
+
+4pm-7:45pm - masterform reducer tests all passing. Add redux to find out for sure though..

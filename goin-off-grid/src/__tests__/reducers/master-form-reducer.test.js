@@ -46,17 +46,14 @@ describe("masterFormReducer", () => {
     id: 1,
   };
   const nextStepTest = {
-    1: {
-      currentStep: 2,
-      id: 1,
-    },
+    currentStep: 2,
   };
   const prevStepTest = {
-    1: {
-      currentStep: 3,
-      id: 1,
-    },
+    currentStep: 3,
   };
+  // const handleChangeTest = {
+  //   hikerName: "bess",
+  // };
 
   test("Should return default state if there is no action type passed into the reducer", () => {
     expect(masterFormReducer({}, { type: null })).toEqual({});
@@ -70,30 +67,35 @@ describe("masterFormReducer", () => {
       id: id,
     };
     expect(masterFormReducer({}, action)).toEqual({
-      [id]: { [name]: value, id },
+      [name]: value,
+      id,
     });
   });
+  // test("Should handle change in masterForm", () => {
+  //   const { hikerName } = handleChangeTest;
+  //   action = {
+  //     type: "HANDLE_CHANGE",
+  //     hikerName,
+  //   };
+  //   expect(masterFormReducer({}, action)).toEqual({
+  //     hikerName: "shawn",
+  //   });
+  // });
 
   test("Should add 1 to current step", () => {
-    const { id } = formData;
+    const { currentStep } = nextStepTest;
     action = {
       type: "NEXT_STEP",
-      // currentStep,
-      id,
+      currentStep,
     };
-    expect(masterFormReducer(nextStepTest, action)).toEqual({
-      [1]: { currentStep: 2, id: 1 },
-    });
+    expect(masterFormReducer(nextStepTest, action)).toEqual({ currentStep: 3 });
   });
   test("Should subtract 1 from current step", () => {
-    const { currentStep, id } = formData;
+    const { currentStep } = prevStepTest;
     action = {
       type: "PREV_STEP",
       currentStep,
-      id,
     };
-    expect(masterFormReducer(prevStepTest, action)).toEqual({
-      [1]: { currentStep: 1, id: 1 },
-    });
+    expect(masterFormReducer(prevStepTest, action)).toEqual({ currentStep: 2 });
   });
 });

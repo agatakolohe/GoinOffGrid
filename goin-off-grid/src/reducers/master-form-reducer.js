@@ -44,28 +44,27 @@ const initialState = {
 };
 
 export default (state = initialState, action) => {
-  let { name, value, id } = action;
+  const { name, value, id, currentStep } = action;
   switch (action.type) {
     case "HANDLE_CHANGE":
       return Object.assign({}, state, {
-        [id]: {
-          [name]: value,
-          id,
-        },
+        [name]: value,
+        id,
       });
     case "NEXT_STEP":
-      let currentState = { ...initialState };
-      let stepOne = currentState.currentStep;
-      let nextCurrentStep = stepOne >= 2 ? 3 : stepOne + 1;
+      // let currentState = { ...state };
+      console.log(currentStep);
+      // let stepOne = currentState.currentStep;
+      let nextCurrentStep = currentStep >= 2 ? 3 : currentStep + 1;
       return Object.assign({}, state, {
-        [id]: { currentStep: nextCurrentStep, id },
+        currentStep: nextCurrentStep,
       });
     case "PREV_STEP":
-      let nextState = { ...initialState };
-      let stepTwo = nextState.currentStep;
-      let prevCurrentStep = stepTwo <= 1 ? 1 : stepTwo - 1;
+      // let nextState = { ...initialState };
+      // let stepTwo = nextState.currentStep;
+      let prevCurrentStep = currentStep <= 1 ? 1 : currentStep - 1;
       return Object.assign({}, state, {
-        [id]: { currentStep: prevCurrentStep, id },
+        currentStep: prevCurrentStep,
       });
     default:
       return state;
