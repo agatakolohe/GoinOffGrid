@@ -1,4 +1,4 @@
-// import { v4 } from "uuid";
+import { v4 } from "uuid";
 import masterFormReducer from "../../reducers/master-form-reducer";
 
 describe("masterFormReducer", () => {
@@ -43,7 +43,7 @@ describe("masterFormReducer", () => {
     contactRelationship: "",
     contactEmail: "",
     contactTel: "",
-    id: 1,
+    id: v4(),
   };
   const nextStepTest = {
     currentStep: 2,
@@ -51,9 +51,6 @@ describe("masterFormReducer", () => {
   const prevStepTest = {
     currentStep: 3,
   };
-  // const handleChangeTest = {
-  //   hikerName: "bess",
-  // };
 
   test("Should return default state if there is no action type passed into the reducer", () => {
     expect(masterFormReducer({}, { type: null })).toEqual({});

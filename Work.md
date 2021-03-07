@@ -1,4 +1,4 @@
-02-26-2021
+02-26-2021 **8hours**
 
 8:30am - Create directory, repo, proposal. Getting organized!
 
@@ -54,7 +54,7 @@
 
 - Debug, installed bootstrap in wrong dir, comment out control to run npm
 
-02-28-2021
+02-28-2021 **8hours**
 
 8:00am-930am - Building out form.
 Notes:
@@ -88,24 +88,24 @@ Notes:
 - Error: Form submission canceled because the form is not connected. Google says to change all button types to be button
 - Error: Warning: Each child in a list should have a unique "key" prop.
 
-03-01
+03-01 **3hours**
 
 6pm-9pm Debug add newHike from MasterForm to Control Hike list
 
-03-02
+03-02 **4hours**
 
 6am-10am Debugged!!! All works!!! Thank you Brooke and Randel for your brains and debugging skillz <3
 
-03-03
+03-03 **1hour**
 
 7am Add user stories, add all props to handleHikeFormSubmission
 
 Bug:radio buttons not working, does not show value on form submission
 https://www.pluralsight.com/guides/how-to-use-radio-buttons-in-reactjs
 
-03-05
+03-05 **8hours**
 
-830am - 5pm Research react native, contemplate life and app's future, change app to be mobile only?
+830am - 4:30pm Research react native, contemplate life and app's future, change app to be mobile only?
 
 New Plan: (maybe)
 
@@ -116,15 +116,27 @@ New Plan: (maybe)
   - handle login, send emails and potentially texts
     **stretch:** geolocation, trail api
 
-03-06
+03-06 **8hours**
 
 830am-930am - Fixed radio button bug for newTrail, avalancheKit and cellPhone values
 930am-12pm - Research editing form and redux for wizard form. Have full crud! Delete reusableform, editform, newhikeform.
 
 - editing form works!!!!
 
-1230pm-2:40pm - Redux time
+1230pm-2:40pm - Redux time, plan reducers for masterform
 
 - trying to figure out how to test reducers...
 
 4pm-7:45pm - masterform reducer tests all passing. Add redux to find out for sure though..
+
+03-06
+
+9am - Add Redux store to masterform
+Plan: Redux, firebase, start designing for react native (login, email, text)
+
+11am-3pm - Input field are not working, can see form, research shows I need a redux-form.
+
+- Install redux-form
+- Redux-form documentation: https://redux-form.com/8.3.0/docs/gettingstarted.md/
+- Forgot to create actions
+- IT WORKS!!!!!!!!!!! MASTERFORM STATE IS HANDLED BY REDUX-FORM

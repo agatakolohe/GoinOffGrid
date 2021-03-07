@@ -1,4 +1,4 @@
-import { v4 } from "uuid";
+// import { v4 } from "uuid";
 
 const initialState = {
   currentStep: 1,
@@ -40,33 +40,29 @@ const initialState = {
   contactRelationship: "",
   contactEmail: "",
   contactTel: "",
-  id: v4(),
+  id: "",
 };
 
-export default (state = initialState, action) => {
-  const { name, value, id, currentStep } = action;
-  switch (action.type) {
-    case "HANDLE_CHANGE":
-      return Object.assign({}, state, {
-        [name]: value,
-        id,
-      });
-    case "NEXT_STEP":
-      // let currentState = { ...state };
-      console.log(currentStep);
-      // let stepOne = currentState.currentStep;
-      let nextCurrentStep = currentStep >= 2 ? 3 : currentStep + 1;
-      return Object.assign({}, state, {
-        currentStep: nextCurrentStep,
-      });
-    case "PREV_STEP":
-      // let nextState = { ...initialState };
-      // let stepTwo = nextState.currentStep;
-      let prevCurrentStep = currentStep <= 1 ? 1 : currentStep - 1;
-      return Object.assign({}, state, {
-        currentStep: prevCurrentStep,
-      });
-    default:
-      return state;
-  }
+const masterFormReducer = (state = initialState) => {
+  // const { name, value, id, currentStep } = action;
+  // switch (action.type) {
+  //   case "HANDLE_CHANGE":
+  //     return Object.assign({}, state, {
+  //       [name]: value,
+  //       id,
+  //     });
+  //   case "NEXT_STEP":
+  //     let nextCurrentStep = currentStep >= 2 ? 3 : currentStep + 1;
+  //     return Object.assign({}, state, {
+  //       currentStep: nextCurrentStep,
+  //     });
+  //   case "PREV_STEP":
+  //     let prevCurrentStep = currentStep <= 1 ? 1 : currentStep - 1;
+  //     return Object.assign({}, state, {
+  //       currentStep: prevCurrentStep,
+  //     });
+  //   default:
+  return state;
 };
+
+export default masterFormReducer;
