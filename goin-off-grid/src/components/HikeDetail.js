@@ -16,7 +16,8 @@ function HikeDetail(props) {
       <p>Mood: {hike.mood}</p>
       <p>Health: {hike.health}</p>
       <p>Itinerary: {hike.itinerary}</p>
-      <p>Transportation {hike.transporationMode}</p>
+      <h4>Transportation: </h4>
+      <p>Transportation Mode: {hike.transporationMode}</p>
       <p>Vehicle Information: {hike.vehicle}</p>
       <p>Gas Tank: {hike.gas}</p>
       <p>Parking Information: {hike.parking}</p>

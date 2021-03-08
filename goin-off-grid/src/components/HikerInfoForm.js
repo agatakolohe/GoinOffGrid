@@ -127,7 +127,7 @@ const HikerInfoForm = (props) => {
       <div className="form-group">
         <p>
           Health Check: Any health conditions or concerns you may be currently
-          exhibiting?"
+          exhibiting?
         </p>
         <Field
           name="health"
