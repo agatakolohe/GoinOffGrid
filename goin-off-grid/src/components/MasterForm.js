@@ -28,6 +28,7 @@ class MasterForm extends Component {
   //   console.log(data.hikerName);
   // };
   handleNewHikeFormSubmission = (data) => {
+    console.log(data.hikeDate);
     // event.preventDefault();
     this.props.onNewHikeCreation({
       hikerName: data.hikerName,

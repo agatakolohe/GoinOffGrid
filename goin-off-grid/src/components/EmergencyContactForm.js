@@ -1,48 +1,63 @@
 import React from "react";
 // import PropTypes from "prop-types";
 import { Field, reduxForm } from "redux-form";
-import renderField from "./RenderField";
 
 const EmergencyContactForm = (props) => {
-  const { handleSubmit, pristine, previousPage, submitting } = props;
+  const { handleSubmit, previousPage } = props;
   return (
     <form onSubmit={handleSubmit}>
-      <div>
-        <h4>Emergency Contact Information</h4>
-        <p>
-          Please provide a person you trust that you wish to be informed about
-          your adventure.
-        </p>
+      <h1>Emergency Contact Information</h1>
+      <p>
+        Please provide a person you trust that you wish to be informed about
+        your adventure.
+      </p>
+      <div className="form-group">
+        <p>Contact Name</p>
+        <Field
+          name="contactName"
+          type="text"
+          component="input"
+          className="form-control"
+        />
       </div>
-      <Field
-        name="contactName"
-        type="text"
-        component={renderField}
-        label="Contact Name"
-      />
-      <Field
-        name="contactRelationship"
-        type="text"
-        component={renderField}
-        label="Relationship"
-      />
-      <Field
-        name="contactEmail"
-        type="email"
-        component={renderField}
-        label="Contact Email"
-      />
-      <Field
-        name="contactTel"
-        type="number"
-        component={renderField}
-        label="Contact Phone number"
-      />
+      <div className="form-group">
+        <p>Relationship</p>
+        <Field
+          name="contactRelationship"
+          type="text"
+          component="input"
+          className="form-control"
+        />
+      </div>
+      <div className="form-group">
+        <p>Contact Email</p>
+        <Field
+          name="contactEmail"
+          type="email"
+          component="input"
+          className="form-control"
+        />
+      </div>
+      <div className="form-group">
+        <p>Contact Phone Number</p>
+        <Field
+          name="contactTel"
+          type="number"
+          component="input"
+          className="form-control"
+        />
+      </div>
       <div>
-        <button type="button" className="previous" onClick={previousPage}>
+        <button
+          type="button"
+          className="btn btn-success"
+          onClick={previousPage}
+        >
           Previous
         </button>
-        <button type="submit">Submit</button>
+        <button type="submit" className="btn btn-info float-right">
+          Submit
+        </button>
       </div>
     </form>
   );

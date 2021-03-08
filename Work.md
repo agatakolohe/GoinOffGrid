@@ -139,4 +139,6 @@ Plan: Redux, firebase, start designing for react native (login, email, text)
 - Install redux-form
 - Redux-form documentation: https://redux-form.com/8.3.0/docs/gettingstarted.md/
 - Forgot to create actions
-- IT WORKS!!!!!!!!!!! MASTERFORM STATE IS HANDLED BY REDUX-FORM
+- IT WORKS!!!!!!!!!!! MASTERFORM STATE IS HANDLED BY REDUX-FORM(3pm)
+
+4pm-630pm - Add bootstrap styling to forms, make pretty, add required catch for date otherwise throws error if left undefined.

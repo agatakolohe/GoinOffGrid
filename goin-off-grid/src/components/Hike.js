@@ -22,7 +22,6 @@ function Hike(props) {
 
 Hike.propTypes = {
   trailName: PropTypes.string,
-  hikeDate: PropTypes.string,
   hikeCompleted: PropTypes.bool,
   id: PropTypes.string,
   whenHikeClicked: PropTypes.func,

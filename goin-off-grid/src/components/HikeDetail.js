@@ -7,7 +7,7 @@ function HikeDetail(props) {
     <React.Fragment>
       <h1>Hiker Information</h1>
       <p>Hiker Name: {hike.hikerName}</p>
-      <p>Hike Date: {hike.hikeDate}</p>
+      <p>Hike Date: {hike.hikeDate.toString()}</p>
       <p>Hike Completed: {hike.hikeCompleted === true ? "yes" : "no"}</p>
       <p>Clothing Worn: {hike.clothingWorn}</p>
       <p>Bringing Cell Phone: {hike.cellPhone}</p>
