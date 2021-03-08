@@ -22,14 +22,7 @@ class MasterForm extends Component {
   previousPage() {
     this.setState({ page: this.state.page - 1 });
   }
-
-  // handleNewHikeFormSubmission = (data) => {
-  //   console.log(data);
-  //   console.log(data.hikerName);
-  // };
   handleNewHikeFormSubmission = (data) => {
-    console.log(data.hikeDate);
-    // event.preventDefault();
     this.props.onNewHikeCreation({
       hikerName: data.hikerName,
       hikeDate: data.hikeDate,
@@ -96,7 +89,6 @@ class MasterForm extends Component {
 }
 
 MasterForm.propTypes = {
-  // onSubmit: PropTypes.func.isRequired,
   onNewHikeCreation: PropTypes.func,
 };
 
