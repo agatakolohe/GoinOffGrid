@@ -184,3 +184,7 @@ Feedback:
 - Mobile app: connect with firebase to pull data from web page, be able to text data
 
 - Create Firebase db
+
+5pm
+
+- Successfully connected to firebase, able to add data to db but throws bug for hikerDate
