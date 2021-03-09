@@ -1,7 +1,7 @@
 import React from "react";
 // import { connect } from "react-redux";
 import { withFirestore, isLoaded } from "react-redux-firebase";
-// import firebase from "firebase/app";
+import firebase from "firebase/app";
 import MasterForm from "./MasterForm";
 import HikeList from "./HikeList";
 import HikeDetail from "./HikeDetail";
@@ -86,6 +86,11 @@ class HikeControl extends React.Component {
 
   render() {
     const auth = this.props.firebase.auth();
+  
+    const password = firebase.auth.EmailAuthProvider.PROVIDER_ID;
+    console.log("password:" + password);
+    console.log("auth below");
+    console.log(auth.currentUser);
     if (!isLoaded(auth)) {
       return (
         <React.Fragment>
@@ -93,16 +98,17 @@ class HikeControl extends React.Component {
         </React.Fragment>
       );
     }
-    if (isLoaded(auth) && auth.currentUser == null) {
+    if ((isLoaded(auth)) && (auth.currentUser == null)) {
       return (
         <React.Fragment>
-          <h1>
-            <a href="/signin">Please sign in </a>
-          </h1>
+          <h1>Please sign in</h1>
         </React.Fragment>
       );
     }
-    if (isLoaded(auth) && auth.currentUser != null) {
+    // auth.onAuthStateChanged(function(user){
+    //   if(user && (isLoaded(auth))
+    
+    if ((isLoaded(password)) && (password != null)) { 
       let currentVisibleState = null;
       let buttonText = null;
       if (this.state.editing) {
@@ -137,6 +143,7 @@ class HikeControl extends React.Component {
         );
         buttonText = "Add Hike";
       }
+    
 
       return (
         <React.Fragment>

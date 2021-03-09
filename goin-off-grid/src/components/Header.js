@@ -19,7 +19,7 @@ function Header() {
           Goin Off Grid
         </a>
         <Link to="/">Home</Link>
-        <a href="/signin">Sign In</a>
+        <Link to="/signin">Account</Link>
       </nav>
     </React.Fragment>
   );

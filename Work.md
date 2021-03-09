@@ -174,14 +174,14 @@ Feedback:
 
 - Pivot to React Native. Create seperate project for mobile development.
 - Research react native wizard form
-- Do not create react native wizard form
+- **Do not create react native wizard form**
 - Focus on finishing web app functionality
   - Connect to firebase
   - Log in authorization
   - Post to db
 - Notes:
-- Web app: to populate database with form submission, create login
-- Mobile app: connect with firebase to pull data from web page, be able to text data
+- Web app: to populate database with form submission, create login (UX perspective, its a long form, and user is packing/planning for hike, more than likely they will be on a machine not phone to fill out the info, but to get info and send message have mobile functionality)
+- Mobile app: connect with firebase to pull data from web page, be able to text data, login with login create via web app
 
 - Create Firebase db
 
@@ -191,9 +191,11 @@ Feedback:
 
 945pm
 
-- Successfully add all data to firebase, had to create new field for date created data in firebase instead of input datetime. good enough for now
+- Successfully add all data to firebase, had to create new field for "date created" data in firebase instead of input datetime. good enough for now
 
 10:30pm
 
 - Add simple sign up, sign in, sign out authorization and authentication
-- Try to route to homepage after sign in
+- Bug: Try to route to homepage after sign in
+- Notes:
+  - Tomorrow: try figure out routes to home from successful sign in, then probs make a "simple" mobile app to make api calls to the db
