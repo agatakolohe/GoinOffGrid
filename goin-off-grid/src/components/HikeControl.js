@@ -1,4 +1,5 @@
 import React from "react";
+import { withFirestore, isLoaded } from "react-redux-firebase";
 import MasterForm from "./MasterForm";
 import HikeList from "./HikeList";
 import HikeDetail from "./HikeDetail";
@@ -76,38 +77,54 @@ class HikeControl extends React.Component {
   render() {
     let currentVisibleState = null;
     let buttonText = null;
-
-    if (this.state.editing) {
-      currentVisibleState = (
-        <MasterForm
-          hike={this.state.selectedHike}
-          onNewHikeCreation={this.handleEditingHikeInList}
-        />
+    const auth = this.props.firebase.auth();
+    if (!isLoaded(auth)) {
+      return (
+        <React.Fragment>
+          <h1>Loading...</h1>
+        </React.Fragment>
       );
-      buttonText = "Return to Main Page";
-    } else if (this.state.selectedHike != null) {
-      currentVisibleState = (
-        <HikeDetail
-          hike={this.state.selectedHike}
-          onClickingDelete={this.handleDeletingHike}
-          onClickingEdit={this.handleEditClick}
-        />
+    }
+    if (isLoaded(auth) && auth.currentUser == null) {
+      return (
+        <React.Fragment>
+          <h1>Please sign in</h1>
+        </React.Fragment>
       );
-      buttonText = "Return to Main Page";
-    } else if (this.state.hikeFormVisibleOnPage) {
-      currentVisibleState = (
-        <MasterForm onNewHikeCreation={this.handleAddingNewHikeToList} />
-      );
-      buttonText = "Return to Main Page";
-    } else {
-      currentVisibleState = (
-        <HikeList
-          hikeList={this.state.masterHikeList}
-          onHikeSelection={this.handleChangingSelectedHike}
-          onClickingCompleteHike={this.handleCompletedHike}
-        />
-      );
-      buttonText = "Add Hike";
+    }
+    if (isLoaded(auth) && auth.currentUser != null) {
+      if (this.state.editing) {
+        currentVisibleState = (
+          <MasterForm
+            hike={this.state.selectedHike}
+            onNewHikeCreation={this.handleEditingHikeInList}
+          />
+        );
+        buttonText = "Return to Main Page";
+      } else if (this.state.selectedHike != null) {
+        currentVisibleState = (
+          <HikeDetail
+            hike={this.state.selectedHike}
+            onClickingDelete={this.handleDeletingHike}
+            onClickingEdit={this.handleEditClick}
+          />
+        );
+        buttonText = "Return to Main Page";
+      } else if (this.state.hikeFormVisibleOnPage) {
+        currentVisibleState = (
+          <MasterForm onNewHikeCreation={this.handleAddingNewHikeToList} />
+        );
+        buttonText = "Return to Main Page";
+      } else {
+        currentVisibleState = (
+          <HikeList
+            hikeList={this.state.masterHikeList}
+            onHikeSelection={this.handleChangingSelectedHike}
+            onClickingCompleteHike={this.handleCompletedHike}
+          />
+        );
+        buttonText = "Add Hike";
+      }
     }
     return (
       <React.Fragment>
@@ -123,4 +140,4 @@ class HikeControl extends React.Component {
     );
   }
 }
-export default HikeControl;
+export default withFirestore(HikeControl);

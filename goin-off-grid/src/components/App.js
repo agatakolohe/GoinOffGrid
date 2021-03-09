@@ -1,15 +1,24 @@
 import React from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Header from "./Header";
 import HikeControl from "./HikeControl";
+import SignIn from "./SignIn";
 
 function App() {
   return (
-    <React.Fragment>
+    <Router>
       <Header />
-      <div className="container">
-        <HikeControl />
-      </div>
-    </React.Fragment>
+      <Switch>
+        <Route path="/signin">
+          <SignIn />
+        </Route>
+        <Route path="/">
+          <div className="container">
+            <HikeControl />
+          </div>
+        </Route>
+      </Switch>
+    </Router>
   );
 }
 

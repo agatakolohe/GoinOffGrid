@@ -188,3 +188,11 @@ Feedback:
 5pm
 
 - Successfully connected to firebase, able to add data to db but throws bug for hikerDate
+
+945pm
+
+- Successfully add all data to firebase, had to create new field for date created data in firebase instead of input datetime. good enough for now
+
+10:30pm
+
+- Add simple sign up, sign in, sign out authorization and authentication

@@ -1,20 +1,18 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
     <React.Fragment>
-      <nav className="navbar navbar-light bg-light">
-        <a className="navbar-brand" href="/">
-          <img
-            src="https://img.freepik.com/free-vector/wallpaper-of-mountain-ink_23-2147496496.jpg"
-            width="10%"
-            className="d-inline-block align-top"
-            alt="Mountain SVG"
-            loading="lazy"
-          ></img>
-          Goin Off Grid
-        </a>
-      </nav>
+      <h1>Goin Off Grid</h1>
+      <ul>
+        <li>
+          <Link to="/">Home</Link>
+        </li>
+        <li>
+          <Link to="/signin">Sign In</Link>
+        </li>
+      </ul>
     </React.Fragment>
   );
 }
