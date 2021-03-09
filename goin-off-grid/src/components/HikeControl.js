@@ -1,8 +1,12 @@
 import React from "react";
+// import { connect } from "react-redux";
 import { withFirestore, isLoaded } from "react-redux-firebase";
+// import firebase from "firebase/app";
 import MasterForm from "./MasterForm";
 import HikeList from "./HikeList";
 import HikeDetail from "./HikeDetail";
+// import Header from "./Header";
+// import * as a from "../actions";
 
 class HikeControl extends React.Component {
   constructor(props) {
@@ -14,6 +18,12 @@ class HikeControl extends React.Component {
       editing: false,
     };
   }
+
+  // handleUserLogin = () => {
+  //   const { dispatch } = this.props;
+  //   const action = a.toggleLogIn();
+  //   dispatch(action);
+  // };
 
   handleAddingNewHikeToList = (newHike) => {
     const newMasterHikeList = this.state.masterHikeList.concat(newHike);
@@ -75,8 +85,6 @@ class HikeControl extends React.Component {
   };
 
   render() {
-    let currentVisibleState = null;
-    let buttonText = null;
     const auth = this.props.firebase.auth();
     if (!isLoaded(auth)) {
       return (
@@ -88,11 +96,15 @@ class HikeControl extends React.Component {
     if (isLoaded(auth) && auth.currentUser == null) {
       return (
         <React.Fragment>
-          <h1>Please sign in</h1>
+          <h1>
+            <a href="/signin">Please sign in </a>
+          </h1>
         </React.Fragment>
       );
     }
     if (isLoaded(auth) && auth.currentUser != null) {
+      let currentVisibleState = null;
+      let buttonText = null;
       if (this.state.editing) {
         currentVisibleState = (
           <MasterForm
@@ -125,19 +137,21 @@ class HikeControl extends React.Component {
         );
         buttonText = "Add Hike";
       }
+
+      return (
+        <React.Fragment>
+          {currentVisibleState}
+          <button
+            className="btn btn-primary"
+            onClick={this.handleClick}
+            type="button"
+          >
+            {buttonText}
+          </button>
+        </React.Fragment>
+      );
     }
-    return (
-      <React.Fragment>
-        {currentVisibleState}
-        <button
-          className="btn btn-primary"
-          onClick={this.handleClick}
-          type="button"
-        >
-          {buttonText}
-        </button>
-      </React.Fragment>
-    );
   }
 }
+
 export default withFirestore(HikeControl);

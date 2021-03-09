@@ -45,56 +45,58 @@ function SignIn() {
   }
   return (
     <React.Fragment>
-      <h1>Create Account</h1>
-      <form onSubmit={doSignUp}>
-        <div className="form-group">
-          <input
-            type="text"
-            name="email"
-            placeholder="email"
-            className="form-control"
-          />
-        </div>
-        <div className="form-group">
-          <input
-            type="password"
-            name="password"
-            placeholder="password"
-            className="form-control"
-          />
-        </div>
-        <button type="submit" className="btn btn-info">
-          Sign Up
+      <div className="container">
+        <h1>Create Account</h1>
+        <form onSubmit={doSignUp}>
+          <div className="form-group">
+            <input
+              type="text"
+              name="email"
+              placeholder="email"
+              className="form-control"
+            />
+          </div>
+          <div className="form-group">
+            <input
+              type="password"
+              name="password"
+              placeholder="password"
+              className="form-control"
+            />
+          </div>
+          <button type="submit" className="btn btn-info">
+            Sign Up
+          </button>
+        </form>
+        <hr />
+        <h1>Sign In</h1>
+        <form onSubmit={doSignIn}>
+          <div className="form-group">
+            <input
+              type="text"
+              name="signInEmail"
+              placeholder="email"
+              className="form-control"
+            />
+          </div>
+          <div className="form-group">
+            <input
+              type="password"
+              name="signInPassword"
+              placeholder="password"
+              className="form-control"
+            />
+          </div>
+          <button type="submit" className="btn btn-success">
+            Sign In
+          </button>
+        </form>
+        <hr />
+        <h1>Sign Out</h1>
+        <button onClick={doSignOut} className="btn btn-danger">
+          Sign Out
         </button>
-      </form>
-      <hr />
-      <h1>Sign In</h1>
-      <form onSubmit={doSignIn}>
-        <div className="form-group">
-          <input
-            type="text"
-            name="signInEmail"
-            placeholder="email"
-            className="form-control"
-          />
-        </div>
-        <div className="form-group">
-          <input
-            type="password"
-            name="signInPassword"
-            placeholder="password"
-            className="form-control"
-          />
-        </div>
-        <button type="submit" className="btn btn-success">
-          Sign In
-        </button>
-      </form>
-      <hr />
-      <h1>Sign Out</h1>
-      <button onClick={doSignOut} className="btn btn-danger">
-        Sign Out
-      </button>
+      </div>
     </React.Fragment>
   );
 }

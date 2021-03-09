@@ -196,3 +196,4 @@ Feedback:
 10:30pm
 
 - Add simple sign up, sign in, sign out authorization and authentication
+- Try to route to homepage after sign in
