@@ -24,18 +24,18 @@ Feedback:
 - Research sending Emails with Firebase with Nodemailer and test with Mailtrap. Research countdown timer template. (Do later not necessary atm, turning into a stretch goal)
 
 - Nodemailer could be used to send and schedule emails
-  Notes:
-- Ten essential items for hiking:
-  - Navigation: map, compass, altimeter, GPS device, personal locator beacon (PLB) or satellite messenger
-  - Headlamp: plus extra batteries
-  - Sun protection: sunglasses, sun-protective clothes and sunscreen
-  - First aid: including foot care and insect repellent (as needed)
-  - Knife: plus a gear repair kit
-  - Fire: matches, lighter, tinder and/or stove
-  - Shelter: carried at all times (can be a light emergency bivy)
-  - Extra food: Beyond the minimum expectation
-  - Extra water: Beyond the minimum expectation
-  - Extra clothes: Beyond the minimum expectation
+- Notes:
+  - Ten essential items for hiking:
+    - Navigation: map, compass, altimeter, GPS device, personal locator beacon (PLB) or satellite messenger
+    - Headlamp: plus extra batteries
+    - Sun protection: sunglasses, sun-protective clothes and sunscreen
+    - First aid: including foot care and insect repellent (as needed)
+    - Knife: plus a gear repair kit
+    - Fire: matches, lighter, tinder and/or stove
+    - Shelter: carried at all times (can be a light emergency bivy)
+    - Extra food: Beyond the minimum expectation
+    - Extra water: Beyond the minimum expectation
+    - Extra clothes: Beyond the minimum expectation
 
 12:30pm
 
@@ -50,8 +50,8 @@ Feedback:
 2:30pm
 
 - Research email scheduler, complete component diagram, add to readme
-  Notes:
-- node-cron
+- Notes:
+  - node-cron
 
 3:30pm
 
@@ -67,30 +67,29 @@ Feedback:
 8:00am-930am
 
 - Building out form.
-  Notes:
-- Should there be seperate forms for hiker info, hike info, emergency contact info? Keep it one for now and see how it looks and functions. UX note: maintaining the goal to have it be "streamlined" having everything all on one form could be more convenient for user.
+- Notes:
+  - Should there be seperate forms for hiker info, hike info, emergency contact info? Keep it one for now and see how it looks and functions. UX note: maintaining the goal to have it be "streamlined" having everything all on one form could be more convenient for user.
 
 10:00am-12pm
 
-- Build Hike Components. Add Hike Detail, Hike List Components. Add functionality for user to click on hike to see full details. Update Component Diagram.
-  Notes: Figure out button for hike completion
+- Build Hike Components. Add Hike Detail, Hike List Components. Add functionality for user to click on hike to see full details.Update Component Diagram.
+- Notes: Figure out button for hike completion
 
 12-1pm
 
 - Debug, full CRUD functionality with static site.
-  Notes:
-- Need to format date to not be yyyy,mm,dd >> moment.js probably the best option
-- Hike completed button function not working >> debugged, is working 1:05pm
-  https://css-tricks.com/the-magic-of-react-based-multi-step-forms/
-- Idea: because form is so long, make seperate components for each form section?
+- Notes:
+  - Need to format date to not be yyyy,mm,dd >> moment.js probably the best option
+  - Hike completed button function not working >> debugged, is working 1:05pm
+  - https://css-tricks.com/the-magic-of-react-based-multi-step-forms/
+  - Idea: because form is so long, make seperate components for each form section?
 
 1pm
 
 - Research multi-step form
-  Notes:
-  https://dev.to/sametweb/how-to-create-multi-step-forms-in-react-3km4
-
-https://codepen.io/nathansebhastian/pen/RvrOYq
+- Notes:
+  - https://dev.to/sametweb/how-to-create-multi-step-forms-in-react-3km4
+  - https://codepen.io/nathansebhastian/pen/RvrOYq
 
 **Naps**
 
@@ -101,9 +100,9 @@ https://codepen.io/nathansebhastian/pen/RvrOYq
 9pm
 
 - Multi-step form working. But is not adding to list. Debug form submission
-  Notes:
-- Error: Form submission canceled because the form is not connected. Google says to change all button types to be button
-- Error: Warning: Each child in a list should have a unique "key" prop.
+- Notes:
+  - Error: Form submission canceled because the form is not connected. Google says to change all button types to be button
+  - Error: Warning: Each child in a list should have a unique "key" prop.
 
 03-01 **3hours**
 
@@ -123,22 +122,21 @@ https://codepen.io/nathansebhastian/pen/RvrOYq
 
 - Add user stories, add all props to handleHikeFormSubmission
 - Bug:radio buttons not working, does not show value on form submission
-  https://www.pluralsight.com/guides/how-to-use-radio-buttons-in-reactjs
+- https://www.pluralsight.com/guides/how-to-use-radio-buttons-in-reactjs
 
 03-05 **8hours**
 
-830am
+830am-4:30pm
 
-- 4:30pm Research react native, contemplate life and app's future, change app to be mobile only?
+- Research react native, contemplate life and app's future, change app to be mobile only?
 
-Plan: (maybe)
-
-- Create edit form, reusable form?
-- Redux to handle form state
-- Firebase
-- React Native
+- Plan: (maybe)
+  - Create edit form, reusable form?
+  - Redux to handle form state
+  - Firebase
+  - React Native
   - handle login, send emails and potentially texts
-    **stretch:** geolocation, trail api
+  - **stretch:** geolocation, trail api
 
 03-06 **8hours**
 
@@ -169,3 +167,20 @@ Plan: (maybe)
 4pm-8pm
 
 - Add bootstrap styling to forms, make pretty, add required validation for date otherwise throws error if left undefined.
+
+03-08
+
+9am-2pm
+
+- Pivot to React Native. Create seperate project for mobile development.
+- Research react native wizard form
+- Do not create react native wizard form
+- Focus on finishing web app functionality
+  - Connect to firebase
+  - Log in authorization
+  - Post to db
+- Notes:
+- Web app: to populate database with form submission, create login
+- Mobile app: connect with firebase to pull data from web page, be able to text data
+
+- Create Firebase db

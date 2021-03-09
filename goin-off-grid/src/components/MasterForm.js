@@ -5,6 +5,8 @@ import { v4 } from "uuid";
 import HikerInfoForm from "./HikerInfoForm";
 import TrailInfoForm from "./TrailInfoForm";
 import EmergencyContactForm from "./EmergencyContactForm";
+// import { useFirestore } from "react-redux-firebase";
+import firebase from "../firebase";
 
 class MasterForm extends Component {
   constructor(props) {
@@ -22,10 +24,21 @@ class MasterForm extends Component {
   previousPage() {
     this.setState({ page: this.state.page - 1 });
   }
+
   handleNewHikeFormSubmission = (data) => {
+    const db = firebase.firestore();
+    // db.settings({
+    //   timestampsInSnapshots: true,
+    // });
+    db.collection("hikes").add({
+      hikerName: data.hikerName,
+      // hikeDate: db.FieldValue.serverTimestamp(),
+      hikerId: data.hikerId,
+    });
     this.props.onNewHikeCreation({
       hikerName: data.hikerName,
       hikeDate: data.hikeDate,
+      hikerId: data.hikerId,
       clothingWorn: data.clothingWorn,
       cellPhone: data.cellPhone,
       batteryLife: data.batteryLife,
