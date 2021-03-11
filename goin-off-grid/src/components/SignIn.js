@@ -2,23 +2,19 @@ import React, { useEffect } from "react";
 import firebase from "firebase/app";
 import * as firebaseui from "firebaseui";
 import "firebaseui/dist/firebaseui.css";
-import { useHistory } from 'react-router-dom'; 
-
+import { useHistory } from "react-router-dom";
 
 let ui = new firebaseui.auth.AuthUI(firebase.auth());
 function SignIn() {
   const history = useHistory();
   useEffect(() => {
-    // let ui = new firebaseui.auth.AuthUI(firebase.auth());
     const uiConfig = {
       callbacks: {
         signInSuccessWithAuthResult: function (authResult, redirectUrl) {
           firebase.handleRedirectResult(authResult).then(() => {
-            history.push("/"); 
+            history.push("/");
           });
-
-          // ui.delete(); 
-        
+          // ui.delete();
           // Return type determines whether we continue the redirect automatically
           // or whether we leave that to developer to handle.
           return false;
@@ -42,7 +38,6 @@ function SignIn() {
       // Privacy policy url.
       privacyPolicyUrl: "<your-privacy-policy-url>",
     };
-    // const ui = new firebaseui.auth.AuthUI(firebase.auth());
     ui.start("#firebaseui-auth-container", uiConfig);
   });
 
@@ -62,8 +57,9 @@ function SignIn() {
   }
 
   function doSignOut() {
-    firebase.auth()
-    .signOut()
+    firebase
+      .auth()
+      .signOut()
       .then(() => {
         alert("You are signed out. Byeeee!");
       })

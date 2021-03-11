@@ -1,12 +1,9 @@
 import React from "react";
-// import { connect } from "react-redux";
 import { withFirestore, isLoaded } from "react-redux-firebase";
 import firebase from "firebase/app";
 import MasterForm from "./MasterForm";
 import HikeList from "./HikeList";
 import HikeDetail from "./HikeDetail";
-// import Header from "./Header";
-// import * as a from "../actions";
 
 class HikeControl extends React.Component {
   constructor(props) {
@@ -18,12 +15,6 @@ class HikeControl extends React.Component {
       editing: false,
     };
   }
-
-  // handleUserLogin = () => {
-  //   const { dispatch } = this.props;
-  //   const action = a.toggleLogIn();
-  //   dispatch(action);
-  // };
 
   handleAddingNewHikeToList = (newHike) => {
     const newMasterHikeList = this.state.masterHikeList.concat(newHike);
@@ -47,7 +38,6 @@ class HikeControl extends React.Component {
     this.setState({ masterHikeList: newMasterHikeList, selectedHike: null });
   };
 
-
   handleEditClick = () => {
     this.setState({ editing: true });
   };
@@ -61,15 +51,7 @@ class HikeControl extends React.Component {
       editing: false,
       selectedHike: null,
     });
-  }; 
-
-  // handleEmailSent = (id) => {
-  //   const selectedHike = this.state.masterHikeList.filter(
-  //     (hike) => hike.id === id
-  //   )[0];
-  //   selectedHike.emailSent = true;
-  //   this.setState({ selectedHike: null });
-  // };
+  };
 
   handleCompletedHike = (id) => {
     const selectedHike = this.state.masterHikeList.filter(
@@ -95,11 +77,8 @@ class HikeControl extends React.Component {
 
   render() {
     const auth = this.props.firebase.auth();
-  
+
     const password = firebase.auth.EmailAuthProvider.PROVIDER_ID;
-    console.log("password:" + password);
-    console.log("auth below");
-    console.log(auth.currentUser);
     if (!isLoaded(auth)) {
       return (
         <React.Fragment>
@@ -107,7 +86,7 @@ class HikeControl extends React.Component {
         </React.Fragment>
       );
     }
-    if ((isLoaded(auth)) && (auth.currentUser == null)) {
+    if (isLoaded(auth) && auth.currentUser == null) {
       return (
         <React.Fragment>
           <h1>Please sign in</h1>
@@ -116,8 +95,8 @@ class HikeControl extends React.Component {
     }
     // auth.onAuthStateChanged(function(user){
     //   if(user && (isLoaded(auth))
-    
-    if ((isLoaded(password)) && (password != null)) { 
+
+    if (isLoaded(password) && password != null) {
       let currentVisibleState = null;
       let buttonText = null;
       if (this.state.editing) {
@@ -152,7 +131,6 @@ class HikeControl extends React.Component {
         );
         buttonText = "Add Hike";
       }
-    
 
       return (
         <React.Fragment>

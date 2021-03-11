@@ -45,8 +45,8 @@ Contact
 
 - User registration (database storage) **Done**
 - User login/sign-out (database authentication) **Done**
-- Form for user to add hike/hiker information and emergency contact information  **Done**
-- Hike Information:  **Done**
+- Form for user to add hike/hiker information and emergency contact information **Done**
+- Hike Information: **Done**
   1. Location
   2. Duration
   3. Weather Conditions
@@ -54,20 +54,20 @@ Contact
   5. Advisories: Wildlife, Flash flood, Avalanche
   6. Trail maintenance, foot traffic, markings
   7. Trail Difficulty
-- Hiker Information:  **Done**
+- Hiker Information: **Done**
   1. Clothing worn, cell phone battery life percentage, cell phone signal, mood, health condition
   2. Itinerary: plan to stay on trail or go off grid, climb, swim
   3. Transportation: type, vehicle description, gas, parking location
   4. Supplies: Water, food, navigation tools(compass, map, GPS), cell phone, buddy, pet, clothing worn and packed, avalanche kit, knife/multi-tool, backpack, first aid kit, whistle, extra equipment(i.e. rope, tent, climbing gear, spikes, snowshoes, trekking poles), head lamp, sun protection, fire(matches, lighter, tinder), tp, id
-- Emergency Contact:  **Done**
+- Emergency Contact: **Done**
+
   1. Name
   2. Relationship
   3. Email
   4. Phone Number
 
-
-- Capability to send email to emergency contact with form information provided by hiker
-- Capability for user to add they have completed their hike and safely returned. **Done** 
+- Capability to send email to emergency contact with form information provided by hiker **Done**
+- Capability for user to add they have completed their hike and safely returned. **Done**
 - Capability to send email to emergency contact when the hiker has added their safe return
 - Capability to schedule an email to send to the emergency contact if hiker has not logged their hike completion and the hike has exceeded specified duration and provide next step instructions.
 

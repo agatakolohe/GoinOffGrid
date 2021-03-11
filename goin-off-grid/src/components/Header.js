@@ -1,7 +1,4 @@
 import React from "react";
-// import React, { useState, useSelector } from "react";
-// import firebase from "firebase/app";
-// import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
 function Header() {

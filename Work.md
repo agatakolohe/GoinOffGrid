@@ -222,4 +222,4 @@ Feedback:
 
 Axios is promise-based, which gives you the ability to take advantage of JavaScript’s async and await for more readable asynchronous code.
 
-- email functionality!!
+- email functionality!! can send emails at the push of a button

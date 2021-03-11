@@ -10,7 +10,8 @@ function Hike(props) {
       data: {
         name: '"Carmen" carmenkolohe@hotmail.com',
         email: '"Agata" agatakolohe@gmail.com',
-        message: "pray this works",
+        message:
+          "Hello! I am goin off grid! I will be hiking this trail and should be back around this time. Make sure they come back alive!",
       },
     }).then((response) => {
       if (response.data.msg === "success") {
@@ -34,7 +35,7 @@ function Hike(props) {
       >
         Hike Completed
       </button>
-      <button className="btn btn-info" onClick={sendHikeEmail}>
+      <button className="btn btn-info float-right" onClick={sendHikeEmail}>
         Send Email
       </button>
     </React.Fragment>

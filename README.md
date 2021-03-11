@@ -5,14 +5,14 @@
 </div>
 
 <div align="center">
-<img src="./img/READMEimg.jpeg" width="500px" height="auto" >
+<img src="./img/GoinOffGrid.png" width="20%" height="auto" >
 </div>
-<h3 align="center">Capstone Project | Initialized: 02-26-2021</h3>
+<h3 align="center">Epicodus Capstone Project | Initialized: 02-26-2021</h3>
 <h4 align="center"> By Agata Kolodziej</h4>
 
 ## Description
 
-GoinOffGrid is an accountability app for hikers to streamline their hike information with an emergency contact. The goal is to have a chosen contact be aware and accountable of the hiker's adventure and safe return.
+GoinOffGrid is an app for hikers to streamline their hike information, store it in a database and send an email to an emergency contact. The goal is to have a chosen contact be aware of the hiker's adventure and safe return. A user can login through gmail or custom mail. A user can fill out a form and store form data in firebase data base. A user can send an email to a contact.
 
 <div align="center">
 
@@ -70,23 +70,31 @@ GoinOffGrid is an accountability app for hikers to streamline their hike informa
 
 ##### Open Locally
 
-<!-- - Click on the link to my repository: [My Repository](https://github.com/agatakolohe/TapRoom-Redux.git)
+- Click on the link to my repository: [My Repository](https://github.com/agatakolohe/GoinOffGrid.git)
 - Click on the green "Code" button and copy the repository URL
-- Open your terminal and use the command `git clone https://github.com/agatakolohe/TapRoom-Redux.git` into the directory you would like to clone the repository
+- Open your terminal and use the command `git clone https://github.com/agatakolohe/GoinOffGrid.git` into the directory you would like to clone the repository
 - Open in text editor to view code and make changes
-  - Open terminal and navigate to tap-room directory
+  - Open terminal and navigate to goinoffgrid directory
   - Use the command `npm install` to download and install all necessary packages for the project to function
-  - Use the command `npm install redux@4.0.5 react-redux@7.1.3` to install redux -->
+  - Open terminal and navigate to goin-off-grid directory
+  - Use the command `npm install` to download and install all necessary packages for the project to function
 
 #### View In Browser
 
-<!-- - To Build and view in browser
-  - Navigate to TapRoom directory and use the command `npm start`
-  - Enjoy the application! -->
+- To Build and view in browser
+  - Navigate to goinoffgrid directory and use the command `node server.js` in terminal
+  - This will start the express server at localhost:5000
+  - You should see `{“express”:”YOUR EXPRESS BACKEND IS CONNECTED TO REACT”}`. This lets you know that the Express server is up and running.
+    **While this is running**
+  - Navigate to goin-off-grid directory and use the command `npm start` in terminal
+  - This will launch a localhost:3000 in your browser with the react front-end
+  - Sign up if you do not have an account
+  - Sign in
+  - Enjoy the app!
 
 ## Known Bugs
 
-No known bugs
+No known bugs. Everything works. It just needs a little more lovin to be more polished.
 
 ## Support and Contact Details
 
@@ -94,15 +102,27 @@ If any errors or bugs occur please email me, <agatakolohe@gmail.com>.
 
 ## Technologies Used
 
+- Axios
 - Bootstrap
 - CSS
+- Express.js
+- Firebase
+- Firebaseui
 - HTML
 - Git
 - JavaScript ES6
+- Jest
 - JSX
+- Moment
+- Mailtrap
 - Node
+- Nodemailer
 - npm
 - React
+- React-firestore
+- React-widgets
+- Redux
+- Redux form
 - VS Code
 
 ### License
