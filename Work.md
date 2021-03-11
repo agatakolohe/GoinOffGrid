@@ -199,3 +199,27 @@ Feedback:
 - Bug: Try to route to homepage after sign in
 - Notes:
   - Tomorrow: try figure out routes to home from successful sign in, then probs make a "simple" mobile app to make api calls to the db
+
+03-09
+
+8am - 5pm
+
+- Debugged FirebaseUI, fully functioning with authorization and authentication maybe use ui.delete() somewhere?
+- Look into how long it would take to create "simple mobile app" to get data from db and send messages
+- Find time to make pretty
+- Nodemailer
+
+03-10
+8am-
+
+- Need to use express to get nodemailer to work needs backend
+- Throwing error Uncaught TypeError: net.isIP is not a function
+- Firebase costs money to run backend code
+- Installed Express js successfully, so far everything works
+- install axios to allow in render async requests
+  Axios:
+  Many projects on the web need to interface with a REST API at some stage in their development. Axios is a lightweight HTTP client based on the $http service within Angular.js v1.x and is similar to the native JavaScript Fetch API.
+
+Axios is promise-based, which gives you the ability to take advantage of JavaScript’s async and await for more readable asynchronous code.
+
+- email functionality!!

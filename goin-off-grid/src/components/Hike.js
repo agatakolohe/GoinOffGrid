@@ -1,7 +1,25 @@
 import React from "react";
 import PropTypes from "prop-types";
+import axios from "axios";
 
 function Hike(props) {
+  function sendHikeEmail() {
+    axios({
+      method: "POST",
+      url: "http://localhost:3000/send",
+      data: {
+        name: '"Carmen" carmenkolohe@hotmail.com',
+        email: '"Agata" agatakolohe@gmail.com',
+        message: "pray this works",
+      },
+    }).then((response) => {
+      if (response.data.msg === "success") {
+        alert("Email sent, awesome!");
+      } else if (response.data.msg === "fail") {
+        alert("Oops, something went wrong. Try again");
+      }
+    });
+  }
   return (
     <React.Fragment>
       <div onClick={() => props.whenHikeClicked(props.id)}>
@@ -15,6 +33,9 @@ function Hike(props) {
         type="button"
       >
         Hike Completed
+      </button>
+      <button className="btn btn-info" onClick={sendHikeEmail}>
+        Send Email
       </button>
     </React.Fragment>
   );

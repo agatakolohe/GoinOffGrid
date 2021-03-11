@@ -47,6 +47,7 @@ class HikeControl extends React.Component {
     this.setState({ masterHikeList: newMasterHikeList, selectedHike: null });
   };
 
+
   handleEditClick = () => {
     this.setState({ editing: true });
   };
@@ -60,7 +61,15 @@ class HikeControl extends React.Component {
       editing: false,
       selectedHike: null,
     });
-  };
+  }; 
+
+  // handleEmailSent = (id) => {
+  //   const selectedHike = this.state.masterHikeList.filter(
+  //     (hike) => hike.id === id
+  //   )[0];
+  //   selectedHike.emailSent = true;
+  //   this.setState({ selectedHike: null });
+  // };
 
   handleCompletedHike = (id) => {
     const selectedHike = this.state.masterHikeList.filter(
