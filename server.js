@@ -3,7 +3,7 @@ const nodemailer = require("nodemailer");
 const creds = require("./config");
 
 const app = express();
-const port = process.env.PORT || 5000;
+const port = 5000;
 
 let transport = {
   host: "smtp-mail.outlook.com",

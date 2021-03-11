@@ -106,10 +106,7 @@ class HikeControl extends React.Component {
           <div style={splashStyles}>
             <h1>Ready to take a hike? </h1> <hr />
             <div style={{ color: "#747976" }}>
-              <h3>
-                To Go Off Grid <br />
-                Please Sign In
-              </h3>
+              <h3>Please sign in to get going</h3>
             </div>
           </div>
         </React.Fragment>

@@ -62,7 +62,7 @@ Feedback:
 - Begin to build static site with React
 - Debug, installed bootstrap in wrong dir, comment out control to run npm
 
-02-28-2021 **8hours**
+02-28-2021
 
 8:00am-930am
 
@@ -104,19 +104,19 @@ Feedback:
   - Error: Form submission canceled because the form is not connected. Google says to change all button types to be button
   - Error: Warning: Each child in a list should have a unique "key" prop.
 
-03-01 **3hours**
+03-01
 
 6pm-9pm
 
 - Debug add newHike from MasterForm to Control Hike list
 
-03-02 **4hours**
+03-02
 
 6am-10am
 
 - Debugged!!! All works!!! Thank you Brooke and Randel for your brains and debugging skillz <3
 
-03-03 **1hour**
+03-03
 
 7am
 
@@ -124,7 +124,7 @@ Feedback:
 - Bug:radio buttons not working, does not show value on form submission
 - https://www.pluralsight.com/guides/how-to-use-radio-buttons-in-reactjs
 
-03-05 **8hours**
+03-05
 
 830am-4:30pm
 
@@ -138,7 +138,7 @@ Feedback:
   - handle login, send emails and potentially texts
   - **stretch:** geolocation, trail api
 
-03-06 **8hours**
+03-06
 
 830am-3pm
 
@@ -223,3 +223,28 @@ Feedback:
 Axios is promise-based, which gives you the ability to take advantage of JavaScript’s async and await for more readable asynchronous code.
 
 - email functionality!! can send emails at the push of a button
+- Make Pretty
+
+**Research:**
+Wizard form:
+https://css-tricks.com/the-magic-of-react-based-multi-step-forms/
+https://www.digitalocean.com/community/tutorials/how-to-create-multistep-forms-with-react-and-semantic-ui
+
+Redux-form:
+https://redux-form.com/8.3.0/docs/gettingstarted.md/
+https://redux-form.com/8.3.0/examples/wizard/
+https://redux-form.com/8.2.2/examples/react-widgets/
+https://react-redux-firebase.com/docs/integrations/redux-form.html
+
+Express:
+https://www.freecodecamp.org/news/use-nodemailer-to-send-emails-from-your-node-js-server/
+Nodemailer:
+https://blog.mailtrap.io/send-emails-with-nodejs/
+https://nodemailer.com/about/
+https://levelup.gitconnected.com/how-to-render-react-app-using-express-server-in-node-js-a428ec4dfe2b
+
+Axios:
+https://www.digitalocean.com/community/tutorials/react-axios-react
+
+Mailtrap:
+https://mailtrap.io/how-it-works

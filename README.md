@@ -5,14 +5,14 @@
 </div>
 
 <div align="center">
-<img src="./img/GoinOffGrid.png" width="20%" height="auto" >
+<img src="./img/GoinOffGrid.png" width="30%" height="auto" >
 </div>
 <h3 align="center">Epicodus Capstone Project | Initialized: 02-26-2021</h3>
 <h4 align="center"> By Agata Kolodziej</h4>
 
 ## Description
 
-GoinOffGrid is an app for hikers to streamline their hike information, store it in a database and send an email to an emergency contact. The goal is to have a chosen contact be aware of the hiker's adventure and safe return. A user can login through gmail or custom mail. A user can fill out a form and store form data in firebase data base. A user can send an email to a contact.
+GoinOffGrid is an app for hikers to streamline their hike information, store it in a database and send an email to an emergency contact. The goal is to have a place for a user to organize their adventure plans and have chosen contact be aware of the hiker's adventure and safe return. A user can login through gmail or custom mail. A user can fill out a form and store form data in firebase data base. A user can send an email to a contact.
 
 <div align="center">
 
@@ -104,6 +104,7 @@ If any errors or bugs occur please email me, <agatakolohe@gmail.com>.
 
 - Axios
 - Bootstrap
+- [Canva](https://www.canva.com/)
 - CSS
 - Express.js
 - Firebase
@@ -118,11 +119,13 @@ If any errors or bugs occur please email me, <agatakolohe@gmail.com>.
 - Node
 - Nodemailer
 - npm
+- [Pixabay](https://pixabay.com/)
 - React
 - React-firestore
 - React-widgets
 - Redux
 - Redux form
+- [Unsplash](https://unsplash.com/)
 - VS Code
 
 ### License
