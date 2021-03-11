@@ -78,6 +78,15 @@ GoinOffGrid is an app for hikers to streamline their hike information, store it 
   - Use the command `npm install` to download and install all necessary packages for the project to function
   - Open terminal and navigate to goin-off-grid directory
   - Use the command `npm install` to download and install all necessary packages for the project to function
+  - You must add an config.js to store the credentials of the account you will be using for nodemailer. Put this file next to your server source code
+
+```
+module.exports = {
+    USER: 'YOUR_EMAIL_ADDRESS',
+    PASS: 'PASSWORD_FOR_EMAIL'
+}
+
+```
 
 #### View In Browser
 
@@ -85,9 +94,9 @@ GoinOffGrid is an app for hikers to streamline their hike information, store it 
   - Navigate to goinoffgrid directory and use the command `node server.js` in terminal
   - This will start the express server at localhost:5000
   - You should see `{“express”:”YOUR EXPRESS BACKEND IS CONNECTED TO REACT”}`. This lets you know that the Express server is up and running.
-    **While this is running**
+  - **While this is running**
   - Navigate to goin-off-grid directory and use the command `npm start` in terminal
-  - This will launch a localhost:3000 in your browser with the react front-end
+  - This will launch a localhost:3000/express_backend in your browser with the react front-end
   - Sign up if you do not have an account
   - Sign in
   - Enjoy the app!
