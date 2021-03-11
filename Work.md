@@ -238,10 +238,12 @@ https://react-redux-firebase.com/docs/integrations/redux-form.html
 
 Express:
 https://www.freecodecamp.org/news/use-nodemailer-to-send-emails-from-your-node-js-server/
+
 Nodemailer:
 https://blog.mailtrap.io/send-emails-with-nodejs/
 https://nodemailer.com/about/
 https://levelup.gitconnected.com/how-to-render-react-app-using-express-server-in-node-js-a428ec4dfe2b
+https://blog.mailtrap.io/react-send-email/#Sending_emails_with_Nodemailer
 
 Axios:
 https://www.digitalocean.com/community/tutorials/react-axios-react
