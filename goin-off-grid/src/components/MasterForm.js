@@ -8,7 +8,14 @@ import EmergencyContactForm from "./EmergencyContactForm";
 // import { useFirestore } from "react-redux-firebase";
 import firebase from "../firebase";
 
-const formStyles = { backgroundColor: "white" };
+const formStyles = {
+  backgroundColor: "#788c94",
+  opacity: "0.9",
+  padding: "1%",
+  borderRadius: "15px 15px",
+  marginTop: "1%",
+};
+
 class MasterForm extends Component {
   constructor(props) {
     super(props);

@@ -14,6 +14,7 @@ function SignIn() {
     backgroundColor: "#cbcdcb",
     width: "50%",
     textAlign: "center",
+    border: "2px dashed #aca4a4",
   };
   const history = useHistory();
   useEffect(() => {

@@ -13,10 +13,10 @@ const splashStyles = {
   backgroundColor: "#cbcdcb",
   width: "50%",
   textAlign: "center",
+  border: "1px dashed #aca4a4",
 };
 const hikerStyle = {
   marginTop: "1%",
-  marginBottom: "1%",
 };
 
 class HikeControl extends React.Component {
@@ -104,11 +104,13 @@ class HikeControl extends React.Component {
       return (
         <React.Fragment>
           <div style={splashStyles}>
-            <h1>
-              Ready to take a hike? <hr />
-              To Go Off Grid <br />
-              Please Sign In
-            </h1>
+            <h1>Ready to take a hike? </h1> <hr />
+            <div style={{ color: "#747976" }}>
+              <h3>
+                To Go Off Grid <br />
+                Please Sign In
+              </h3>
+            </div>
           </div>
         </React.Fragment>
       );
@@ -159,7 +161,7 @@ class HikeControl extends React.Component {
               alt="Hiker Vector"
             />
           </div>
-          {currentVisibleState}
+          <br />
           <button
             className="btn btn-outline-dark"
             onClick={this.handleClick}
@@ -167,6 +169,7 @@ class HikeControl extends React.Component {
           >
             {buttonText}
           </button>
+          {currentVisibleState}
         </React.Fragment>
       );
     }

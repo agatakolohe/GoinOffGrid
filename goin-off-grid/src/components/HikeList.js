@@ -12,6 +12,9 @@ function HikeList(props) {
           whenHikeClicked={props.onHikeSelection}
           trailName={hike.trailName}
           hikeDate={hike.hikeDate.toString()}
+          duration={hike.duration}
+          contactName={hike.contactName}
+          hikerName={hike.hikerName}
           hikeCompleted={hike.hikeCompleted}
           id={hike.id}
           key={hike.id}
