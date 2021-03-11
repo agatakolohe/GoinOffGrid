@@ -6,6 +6,15 @@ import { useHistory } from "react-router-dom";
 
 let ui = new firebaseui.auth.AuthUI(firebase.auth());
 function SignIn() {
+  const signInStyles = {
+    marginTop: "5%",
+    padding: "3%",
+    borderRadius: "15px 50px",
+    color: "#323f32",
+    backgroundColor: "#cbcdcb",
+    width: "50%",
+    textAlign: "center",
+  };
   const history = useHistory();
   useEffect(() => {
     const uiConfig = {
@@ -70,33 +79,39 @@ function SignIn() {
   return (
     <React.Fragment>
       <div className="container">
-        <h1>Create Account</h1>
-        <form onSubmit={doSignUp}>
-          <div className="form-group">
-            <input
-              type="text"
-              name="email"
-              placeholder="email"
-              className="form-control"
-            />
-          </div>
-          <div className="form-group">
-            <input
-              type="password"
-              name="password"
-              placeholder="password"
-              className="form-control"
-            />
-          </div>
-          <button type="submit" className="btn btn-info">
-            Sign Up
+        <div style={signInStyles}>
+          <h2>Create Account</h2>
+          <hr />
+          <form onSubmit={doSignUp}>
+            <div className="form-group">
+              <input
+                type="text"
+                name="email"
+                placeholder="email"
+                className="form-control"
+              />
+            </div>
+            <div className="form-group">
+              <input
+                type="password"
+                name="password"
+                placeholder="password"
+                className="form-control"
+              />
+            </div>
+            <br />
+            <button type="submit" className="btn btn-info">
+              Sign Up
+            </button>
+          </form>
+
+          <hr />
+          <div id="firebaseui-auth-container"> </div>
+          <hr />
+          <button onClick={doSignOut} className="btn btn-danger">
+            Sign Out
           </button>
-        </form>
-        <hr />
-        <div id="firebaseui-auth-container"> </div>
-        <button onClick={doSignOut} className="btn btn-danger">
-          Sign Out
-        </button>
+        </div>
       </div>
     </React.Fragment>
   );

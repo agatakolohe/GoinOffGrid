@@ -8,6 +8,7 @@ import EmergencyContactForm from "./EmergencyContactForm";
 // import { useFirestore } from "react-redux-firebase";
 import firebase from "../firebase";
 
+const formStyles = { backgroundColor: "white" };
 class MasterForm extends Component {
   constructor(props) {
     super(props);
@@ -115,7 +116,7 @@ class MasterForm extends Component {
     const { handleSubmit } = this.props;
     const { page } = this.state;
     return (
-      <div>
+      <div style={formStyles}>
         {page === 1 && <HikerInfoForm onSubmit={this.nextPage} />}
         {page === 2 && (
           <TrailInfoForm

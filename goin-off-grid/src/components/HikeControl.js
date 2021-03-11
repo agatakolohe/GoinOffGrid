@@ -5,6 +5,20 @@ import MasterForm from "./MasterForm";
 import HikeList from "./HikeList";
 import HikeDetail from "./HikeDetail";
 
+const splashStyles = {
+  marginTop: "10%",
+  padding: "3%",
+  borderRadius: "15px 50px",
+  color: "#323f32",
+  backgroundColor: "#cbcdcb",
+  width: "50%",
+  textAlign: "center",
+};
+const hikerStyle = {
+  marginTop: "1%",
+  marginBottom: "1%",
+};
+
 class HikeControl extends React.Component {
   constructor(props) {
     super(props);
@@ -89,13 +103,16 @@ class HikeControl extends React.Component {
     if (isLoaded(auth) && auth.currentUser == null) {
       return (
         <React.Fragment>
-          <h1>Please sign in</h1>
+          <div style={splashStyles}>
+            <h1>
+              Ready to take a hike? <hr />
+              To Go Off Grid <br />
+              Please Sign In
+            </h1>
+          </div>
         </React.Fragment>
       );
     }
-    // auth.onAuthStateChanged(function(user){
-    //   if(user && (isLoaded(auth))
-
     if (isLoaded(password) && password != null) {
       let currentVisibleState = null;
       let buttonText = null;
@@ -134,9 +151,17 @@ class HikeControl extends React.Component {
 
       return (
         <React.Fragment>
+          <div style={hikerStyle}>
+            <img
+              src="https://cdn.pixabay.com/photo/2012/04/13/17/52/backpacker-33063_1280.png"
+              width="10%"
+              height="auto"
+              alt="Hiker Vector"
+            />
+          </div>
           {currentVisibleState}
           <button
-            className="btn btn-primary"
+            className="btn btn-outline-dark"
             onClick={this.handleClick}
             type="button"
           >
