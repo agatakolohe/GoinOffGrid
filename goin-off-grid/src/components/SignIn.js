@@ -24,22 +24,15 @@ function SignIn() {
           firebase.handleRedirectResult(authResult).then(() => {
             history.push("/");
           });
-          // ui.delete();
-          // Return type determines whether we continue the redirect automatically
-          // or whether we leave that to developer to handle.
+          //Initially, this was empty. Since I am using a react router in App, this function will redirect to the homepage upon successful signin with authorization. history is the useHistory hook, to give access for me to push the entry onto a the new path which would be the mainpage.
           return false;
         },
-        uiShown: function () {
-          // The widget is rendered.
-          // Hide the loader.
-          // document.getElementById("loader").style.display = "none";
-        },
+        uiShown: function () {},
       },
-      // Will use popup for IDP Providers sign-in flow instead of the default, redirect.
       signInFlow: "popup",
       signInSuccessUrl: "/signin",
+      //this was initially "/" which would redirect to the main page without auth and therefore the page would render with "please sign in"
       signInOptions: [
-        // Leave the lines as is for the providers you want to offer your users.
         firebase.auth.EmailAuthProvider.PROVIDER_ID,
         firebase.auth.GoogleAuthProvider.PROVIDER_ID,
       ],

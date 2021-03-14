@@ -298,5 +298,7 @@ const HikerInfoForm = (props) => {
 export default reduxForm({
   form: "hike-form",
   destroyOnUnmount: false,
+  //preserve values
   forceUnregisterOnUnmount: true,
+  //if go back destory fields as they unmount but not the form's state
 })(HikerInfoForm);
