@@ -92,11 +92,11 @@ module.exports = {
 
 - To Build and view in browser
   - Navigate to goinoffgrid directory and use the command `node server.js` in terminal
-  - This will start the express server at localhost:5000
+  - This will start the express server at localhost:5000/express_backend
   - You should see `{“express”:”YOUR EXPRESS BACKEND IS CONNECTED TO REACT”}`. This lets you know that the Express server is up and running.
   - **While this is running**
   - Navigate to goin-off-grid directory and use the command `npm start` in terminal
-  - This will launch a localhost:3000/express_backend in your browser with the react front-end
+  - This will launch a localhost:3000 in your browser with the react front-end
   - Sign up if you do not have an account
   - Sign in
   - Enjoy the app!
